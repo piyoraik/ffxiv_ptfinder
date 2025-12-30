@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "jobs": {
+    "DRK": { "short": "暗", "role": "tank" },
+    "PLD": { "short": "ナ", "role": "tank" },
+    "WAR": { "short": "戦", "role": "tank" },
+    "GNB": { "short": "ガ", "role": "tank" },
+    "AST": { "short": "占", "role": "healer" },
+    "SGE": { "short": "賢", "role": "healer" },
+    "SCH": { "short": "学", "role": "healer" },
+    "WHM": { "short": "白", "role": "healer" },
+    "VPR": { "short": "ヴ", "role": "dps" },
+    "DRG": { "short": "竜", "role": "dps" },
+    "MNK": { "short": "モ", "role": "dps" },
+    "NIN": { "short": "忍", "role": "dps" },
+    "SAM": { "short": "侍", "role": "dps" },
+    "RPR": { "short": "リ", "role": "dps" },
+    "MCH": { "short": "機", "role": "dps" },
+    "DNC": { "short": "踊", "role": "dps" },
+    "BRD": { "short": "詩", "role": "dps" },
+    "BLM": { "short": "黒", "role": "dps" },
+    "SMN": { "short": "召", "role": "dps" },
+    "RDM": { "short": "赤", "role": "dps" },
+    "PCT": { "short": "ピ", "role": "dps" }
+  }
+}

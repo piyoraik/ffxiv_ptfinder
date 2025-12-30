@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tags": [
+    { "token": "[Practice]", "label": "練習" },
+    { "token": "[Duty Completion]", "label": "コンプリート目的" },
+    { "token": "[Loot]", "label": "周回" },
+    { "token": "[One Player per Job]", "label": "ジョブ重複なし" },
+    { "token": "[Duty Complete]", "label": "コンプリート済み" }
+  ]
+}
+

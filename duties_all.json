@@ -1,0 +1,3322 @@
+[
+  {
+    "duty_id": 1,
+    "duty_name": "監獄廃墟 トトラクの千獄"
+  },
+  {
+    "duty_id": 2,
+    "duty_name": "地下霊殿 タムタラの墓所"
+  },
+  {
+    "duty_id": 3,
+    "duty_name": "封鎖坑道 カッパーベル銅山"
+  },
+  {
+    "duty_id": 4,
+    "duty_name": "天然要害 サスタシャ浸食洞"
+  },
+  {
+    "duty_id": 5,
+    "duty_name": "霧中行軍 オーラムヴェイル"
+  },
+  {
+    "duty_id": 6,
+    "duty_name": "名門屋敷 ハウケタ御用邸"
+  },
+  {
+    "duty_id": 7,
+    "duty_name": "魔獣領域 ハラタリ修練所"
+  },
+  {
+    "duty_id": 8,
+    "duty_name": "奪還支援 ブレイフロクスの野営地"
+  },
+  {
+    "duty_id": 9,
+    "duty_name": "遺跡探索 カルン埋没寺院"
+  },
+  {
+    "duty_id": 10,
+    "duty_name": "旅神聖域 ワンダラーパレス"
+  },
+  {
+    "duty_id": 11,
+    "duty_name": "城塞攻略 ストーンヴィジル"
+  },
+  {
+    "duty_id": 12,
+    "duty_name": "流砂迷宮 カッターズクライ"
+  },
+  {
+    "duty_id": 13,
+    "duty_name": "掃討作戦 ゼーメル要塞"
+  },
+  {
+    "duty_id": 14,
+    "duty_name": "邪教排撃 古城アムダプール"
+  },
+  {
+    "duty_id": 15,
+    "duty_name": "外郭攻略 カストルム・メリディアヌム"
+  },
+  {
+    "duty_id": 16,
+    "duty_name": "最終決戦 魔導城プラエトリウム"
+  },
+  {
+    "duty_id": 17,
+    "duty_name": "怪鳥巨塔 シリウス大灯台"
+  },
+  {
+    "duty_id": 18,
+    "duty_name": "騒乱坑道 カッパーベル銅山 (Hard)"
+  },
+  {
+    "duty_id": 19,
+    "duty_name": "妖異屋敷 ハウケタ御用邸 (Hard)"
+  },
+  {
+    "duty_id": 20,
+    "duty_name": "盟友支援 ブレイフロクスの野営地 (Hard)"
+  },
+  {
+    "duty_id": 21,
+    "duty_name": "剣闘領域 ハラタリ修練所 (Hard)"
+  },
+  {
+    "duty_id": 22,
+    "duty_name": "腐敗遺跡 古アムダプール市街"
+  },
+  {
+    "duty_id": 23,
+    "duty_name": "財宝伝説 ハルブレーカー・アイル"
+  },
+  {
+    "duty_id": 24,
+    "duty_name": "惨劇霊殿 タムタラの墓所 (Hard)"
+  },
+  {
+    "duty_id": 25,
+    "duty_name": "城塞奪回 ストーンヴィジル (Hard)"
+  },
+  {
+    "duty_id": 26,
+    "duty_name": "遺跡救援 カルン埋没寺院 (Hard)"
+  },
+  {
+    "duty_id": 27,
+    "duty_name": "氷結潜窟 スノークローク大氷壁"
+  },
+  {
+    "duty_id": 28,
+    "duty_name": "逆襲要害 サスタシャ浸食洞 (Hard)"
+  },
+  {
+    "duty_id": 29,
+    "duty_name": "邪念排撃 古城アムダプール (Hard)"
+  },
+  {
+    "duty_id": 30,
+    "duty_name": "武装聖域 ワンダラーパレス (Hard)"
+  },
+  {
+    "duty_id": 31,
+    "duty_name": "禁書回収 グブラ幻想図書館"
+  },
+  {
+    "duty_id": 32,
+    "duty_name": "幻龍残骸 黙約の塔"
+  },
+  {
+    "duty_id": 33,
+    "duty_name": "神域浮島 ネバーリープ"
+  },
+  {
+    "duty_id": 34,
+    "duty_name": "強硬突入 イシュガルド教皇庁"
+  },
+  {
+    "duty_id": 35,
+    "duty_name": "博物戦艦 フラクタル・コンティニアム"
+  },
+  {
+    "duty_id": 36,
+    "duty_name": "廃砦捜索 ダスクヴィジル"
+  },
+  {
+    "duty_id": 37,
+    "duty_name": "霊峰踏破 ソーム・アル"
+  },
+  {
+    "duty_id": 38,
+    "duty_name": "蒼天聖戦 魔科学研究所"
+  },
+  {
+    "duty_id": 39,
+    "duty_name": "邪竜血戦 ドラゴンズエアリー"
+  },
+  {
+    "duty_id": 40,
+    "duty_name": "制圧巨塔 シリウス大灯台 (Hard)"
+  },
+  {
+    "duty_id": 41,
+    "duty_name": "草木庭園 聖モシャーヌ植物園"
+  },
+  {
+    "duty_id": 42,
+    "duty_name": "集団戦訓練をくぐり抜けろ！"
+  },
+  {
+    "duty_id": 43,
+    "duty_name": "彷徨う死霊を討て！"
+  },
+  {
+    "duty_id": 44,
+    "duty_name": "全関門を突破し、最深部の敵を討て！"
+  },
+  {
+    "duty_id": 45,
+    "duty_name": "ギルガメを捕獲せよ！"
+  },
+  {
+    "duty_id": 46,
+    "duty_name": "有毒妖花を駆除せよ！"
+  },
+  {
+    "duty_id": 47,
+    "duty_name": "無法者「似我蜂団」を撃滅せよ！"
+  },
+  {
+    "duty_id": 48,
+    "duty_name": "夢幻のブラキシオを討て！"
+  },
+  {
+    "duty_id": 49,
+    "duty_name": "爆弾魔ゴブリン軍団を撃滅せよ！"
+  },
+  {
+    "duty_id": 50,
+    "duty_name": "汚染源モルボルを討て！"
+  },
+  {
+    "duty_id": 51,
+    "duty_name": "坑道に現れた妖異ブソを討て！"
+  },
+  {
+    "duty_id": 52,
+    "duty_name": "無敵の眷属を従えし、大型妖異を討て！"
+  },
+  {
+    "duty_id": 53,
+    "duty_name": "ボムを率いる「ボムクイーン」を討て！"
+  },
+  {
+    "duty_id": 54,
+    "duty_name": "不気味な陣形を組む妖異をせん滅せよ！"
+  },
+  {
+    "duty_id": 55,
+    "duty_name": "三つ巴の巨人族を制し、遺物を守れ！"
+  },
+  {
+    "duty_id": 56,
+    "duty_name": "イフリート討伐戦"
+  },
+  {
+    "duty_id": 57,
+    "duty_name": "タイタン討伐戦"
+  },
+  {
+    "duty_id": 58,
+    "duty_name": "ガルーダ討伐戦"
+  },
+  {
+    "duty_id": 59,
+    "duty_name": "真イフリート討滅戦"
+  },
+  {
+    "duty_id": 60,
+    "duty_name": "真タイタン討滅戦"
+  },
+  {
+    "duty_id": 61,
+    "duty_name": "真ガルーダ討滅戦"
+  },
+  {
+    "duty_id": 63,
+    "duty_name": "極イフリート討滅戦"
+  },
+  {
+    "duty_id": 64,
+    "duty_name": "極タイタン討滅戦"
+  },
+  {
+    "duty_id": 65,
+    "duty_name": "極ガルーダ討滅戦"
+  },
+  {
+    "duty_id": 66,
+    "duty_name": "善王モグル・モグXII世討滅戦"
+  },
+  {
+    "duty_id": 67,
+    "duty_name": "極王モグル・モグXII世討滅戦"
+  },
+  {
+    "duty_id": 68,
+    "duty_name": "究極幻想 アルテマウェポン破壊作戦"
+  },
+  {
+    "duty_id": 69,
+    "duty_name": "アスラ討滅戦"
+  },
+  {
+    "duty_id": 70,
+    "duty_name": "イベント用コンテンツ：1"
+  },
+  {
+    "duty_id": 71,
+    "duty_name": "イベント用コンテンツ：2"
+  },
+  {
+    "duty_id": 72,
+    "duty_name": "真リヴァイアサン討滅戦"
+  },
+  {
+    "duty_id": 73,
+    "duty_name": "極リヴァイアサン討滅戦"
+  },
+  {
+    "duty_id": 74,
+    "duty_name": "ドルムキマイラ討伐戦"
+  },
+  {
+    "duty_id": 75,
+    "duty_name": "ハイドラ討伐戦"
+  },
+  {
+    "duty_id": 76,
+    "duty_name": "ギルガメッシュ討伐戦"
+  },
+  {
+    "duty_id": 77,
+    "duty_name": "真ラムウ討滅戦"
+  },
+  {
+    "duty_id": 78,
+    "duty_name": "極ラムウ討滅戦"
+  },
+  {
+    "duty_id": 79,
+    "duty_name": "真シヴァ討滅戦"
+  },
+  {
+    "duty_id": 80,
+    "duty_name": "極シヴァ討滅戦"
+  },
+  {
+    "duty_id": 81,
+    "duty_name": "アマジナ杯闘技会決勝戦"
+  },
+  {
+    "duty_id": 82,
+    "duty_name": "闘神オーディン討滅戦"
+  },
+  {
+    "duty_id": 84,
+    "duty_name": "アシエン・ナプリアレス討伐戦"
+  },
+  {
+    "duty_id": 85,
+    "duty_name": "真ギルガメッシュ討滅戦"
+  },
+  {
+    "duty_id": 86,
+    "duty_name": "真ラーヴァナ討滅戦"
+  },
+  {
+    "duty_id": 87,
+    "duty_name": "極ラーヴァナ討滅戦"
+  },
+  {
+    "duty_id": 88,
+    "duty_name": "真ビスマルク討滅戦"
+  },
+  {
+    "duty_id": 89,
+    "duty_name": "極ビスマルク討滅戦"
+  },
+  {
+    "duty_id": 90,
+    "duty_name": "ナイツ・オブ・ラウンド討滅戦"
+  },
+  {
+    "duty_id": 91,
+    "duty_name": "蒼天幻想 ナイツ・オブ・ラウンド討滅戦"
+  },
+  {
+    "duty_id": 92,
+    "duty_name": "クリスタルタワー：古代の民の迷宮"
+  },
+  {
+    "duty_id": 93,
+    "duty_name": "大迷宮バハムート：邂逅編1"
+  },
+  {
+    "duty_id": 94,
+    "duty_name": "大迷宮バハムート：邂逅編2"
+  },
+  {
+    "duty_id": 95,
+    "duty_name": "大迷宮バハムート：邂逅編3"
+  },
+  {
+    "duty_id": 96,
+    "duty_name": "大迷宮バハムート：邂逅編4"
+  },
+  {
+    "duty_id": 97,
+    "duty_name": "大迷宮バハムート：邂逅編5"
+  },
+  {
+    "duty_id": 98,
+    "duty_name": "大迷宮バハムート：侵攻編1"
+  },
+  {
+    "duty_id": 99,
+    "duty_name": "大迷宮バハムート：侵攻編2"
+  },
+  {
+    "duty_id": 100,
+    "duty_name": "大迷宮バハムート：侵攻編3"
+  },
+  {
+    "duty_id": 101,
+    "duty_name": "大迷宮バハムート：侵攻編4"
+  },
+  {
+    "duty_id": 102,
+    "duty_name": "クリスタルタワー：シルクスの塔"
+  },
+  {
+    "duty_id": 103,
+    "duty_name": "大迷宮バハムート零式：侵攻編1"
+  },
+  {
+    "duty_id": 104,
+    "duty_name": "大迷宮バハムート零式：侵攻編2"
+  },
+  {
+    "duty_id": 105,
+    "duty_name": "大迷宮バハムート零式：侵攻編3"
+  },
+  {
+    "duty_id": 106,
+    "duty_name": "大迷宮バハムート零式：侵攻編4"
+  },
+  {
+    "duty_id": 107,
+    "duty_name": "大迷宮バハムート：真成編1"
+  },
+  {
+    "duty_id": 108,
+    "duty_name": "大迷宮バハムート：真成編2"
+  },
+  {
+    "duty_id": 109,
+    "duty_name": "大迷宮バハムート：真成編3"
+  },
+  {
+    "duty_id": 110,
+    "duty_name": "大迷宮バハムート：真成編4"
+  },
+  {
+    "duty_id": 111,
+    "duty_name": "クリスタルタワー：闇の世界"
+  },
+  {
+    "duty_id": 112,
+    "duty_name": "機工城アレキサンダー：起動編1"
+  },
+  {
+    "duty_id": 113,
+    "duty_name": "機工城アレキサンダー：起動編2"
+  },
+  {
+    "duty_id": 114,
+    "duty_name": "機工城アレキサンダー：起動編3"
+  },
+  {
+    "duty_id": 115,
+    "duty_name": "機工城アレキサンダー：起動編4"
+  },
+  {
+    "duty_id": 116,
+    "duty_name": "機工城アレキサンダー零式：起動編1"
+  },
+  {
+    "duty_id": 117,
+    "duty_name": "機工城アレキサンダー零式：起動編2"
+  },
+  {
+    "duty_id": 118,
+    "duty_name": "機工城アレキサンダー零式：起動編3"
+  },
+  {
+    "duty_id": 119,
+    "duty_name": "機工城アレキサンダー零式：起動編4"
+  },
+  {
+    "duty_id": 120,
+    "duty_name": "魔航船ヴォイドアーク"
+  },
+  {
+    "duty_id": 127,
+    "duty_name": "外縁遺跡群 (制圧戦)"
+  },
+  {
+    "duty_id": 130,
+    "duty_name": "シールロック (争奪戦)"
+  },
+  {
+    "duty_id": 131,
+    "duty_name": "雲海探索 ディアデム諸島 (Easy)"
+  },
+  {
+    "duty_id": 132,
+    "duty_name": "雲海探索 ディアデム諸島"
+  },
+  {
+    "duty_id": 133,
+    "duty_name": "雲海探索 ディアデム諸島 (Hard)"
+  },
+  {
+    "duty_id": 134,
+    "duty_name": "魔神セフィロト討滅戦"
+  },
+  {
+    "duty_id": 135,
+    "duty_name": "極魔神セフィロト討滅戦"
+  },
+  {
+    "duty_id": 136,
+    "duty_name": "機工城アレキサンダー：律動編1"
+  },
+  {
+    "duty_id": 137,
+    "duty_name": "機工城アレキサンダー：律動編2"
+  },
+  {
+    "duty_id": 138,
+    "duty_name": "機工城アレキサンダー：律動編3"
+  },
+  {
+    "duty_id": 139,
+    "duty_name": "機工城アレキサンダー：律動編4"
+  },
+  {
+    "duty_id": 140,
+    "duty_name": "神聖遺跡 古アムダプール市街 (Hard)"
+  },
+  {
+    "duty_id": 141,
+    "duty_name": "星海観測 逆さの塔"
+  },
+  {
+    "duty_id": 147,
+    "duty_name": "機工城アレキサンダー零式：律動編1"
+  },
+  {
+    "duty_id": 148,
+    "duty_name": "機工城アレキサンダー零式：律動編2"
+  },
+  {
+    "duty_id": 149,
+    "duty_name": "機工城アレキサンダー零式：律動編3"
+  },
+  {
+    "duty_id": 150,
+    "duty_name": "機工城アレキサンダー零式：律動編4"
+  },
+  {
+    "duty_id": 151,
+    "duty_name": "範囲攻撃を避けよう！"
+  },
+  {
+    "duty_id": 152,
+    "duty_name": "コンボで敵視を集めよう！"
+  },
+  {
+    "duty_id": 153,
+    "duty_name": "実戦でコンボに挑戦しよう！"
+  },
+  {
+    "duty_id": 154,
+    "duty_name": "複数の敵から敵視を集めよう！"
+  },
+  {
+    "duty_id": 155,
+    "duty_name": "実戦で複数の敵と戦ってみよう！"
+  },
+  {
+    "duty_id": 156,
+    "duty_name": "遠距離から敵視を集めよう！"
+  },
+  {
+    "duty_id": 157,
+    "duty_name": "敵の増援に対応しよう！"
+  },
+  {
+    "duty_id": 158,
+    "duty_name": "味方と協力して敵を倒そう！"
+  },
+  {
+    "duty_id": 159,
+    "duty_name": "味方が引きつけている敵を倒そう！"
+  },
+  {
+    "duty_id": 160,
+    "duty_name": "敵の攻撃を避けながら戦おう！"
+  },
+  {
+    "duty_id": 161,
+    "duty_name": "敵の増援に対応しよう！"
+  },
+  {
+    "duty_id": 162,
+    "duty_name": "ギミックを活用して戦おう！"
+  },
+  {
+    "duty_id": 163,
+    "duty_name": "味方を回復しよう！"
+  },
+  {
+    "duty_id": 164,
+    "duty_name": "複数の味方を回復しよう！"
+  },
+  {
+    "duty_id": 165,
+    "duty_name": "敵の攻撃を避けながら戦おう！"
+  },
+  {
+    "duty_id": 166,
+    "duty_name": "最終訓練！"
+  },
+  {
+    "duty_id": 167,
+    "duty_name": "四国合同演習"
+  },
+  {
+    "duty_id": 168,
+    "duty_name": "禁忌都市マハ"
+  },
+  {
+    "duty_id": 169,
+    "duty_name": "ニーズヘッグ征竜戦"
+  },
+  {
+    "duty_id": 170,
+    "duty_name": "極ニーズヘッグ征竜戦"
+  },
+  {
+    "duty_id": 171,
+    "duty_name": "天竜宮殿 ソール・カイ"
+  },
+  {
+    "duty_id": 172,
+    "duty_name": "黒渦伝説 ハルブレーカー・アイル (Hard)"
+  },
+  {
+    "duty_id": 173,
+    "duty_name": "レグラ・ヴァン・ヒュドルス追撃戦"
+  },
+  {
+    "duty_id": 174,
+    "duty_name": "死者の宮殿 B1～B10"
+  },
+  {
+    "duty_id": 175,
+    "duty_name": "死者の宮殿 B11～B20"
+  },
+  {
+    "duty_id": 176,
+    "duty_name": "死者の宮殿 B21～B30"
+  },
+  {
+    "duty_id": 177,
+    "duty_name": "死者の宮殿 B31～B40"
+  },
+  {
+    "duty_id": 178,
+    "duty_name": "死者の宮殿 B41～B50"
+  },
+  {
+    "duty_id": 179,
+    "duty_name": "宝物庫 アクアポリス"
+  },
+  {
+    "duty_id": 180,
+    "duty_name": "フィールド・オブ・グローリー (砕氷戦)"
+  },
+  {
+    "duty_id": 181,
+    "duty_name": "亡霊屋敷 ホーンテッドマナー"
+  },
+  {
+    "duty_id": 182,
+    "duty_name": "峻厳渓谷 ゼルファトル"
+  },
+  {
+    "duty_id": 183,
+    "duty_name": "女神ソフィア討滅戦"
+  },
+  {
+    "duty_id": 184,
+    "duty_name": "極女神ソフィア討滅戦"
+  },
+  {
+    "duty_id": 186,
+    "duty_name": "機工城アレキサンダー：天動編1"
+  },
+  {
+    "duty_id": 187,
+    "duty_name": "機工城アレキサンダー：天動編2"
+  },
+  {
+    "duty_id": 188,
+    "duty_name": "機工城アレキサンダー：天動編3"
+  },
+  {
+    "duty_id": 189,
+    "duty_name": "機工城アレキサンダー：天動編4"
+  },
+  {
+    "duty_id": 190,
+    "duty_name": "機工城アレキサンダー零式：天動編1"
+  },
+  {
+    "duty_id": 191,
+    "duty_name": "機工城アレキサンダー零式：天動編2"
+  },
+  {
+    "duty_id": 192,
+    "duty_name": "機工城アレキサンダー零式：天動編3"
+  },
+  {
+    "duty_id": 193,
+    "duty_name": "機工城アレキサンダー零式：天動編4"
+  },
+  {
+    "duty_id": 194,
+    "duty_name": "絡み合う宿命"
+  },
+  {
+    "duty_id": 195,
+    "duty_name": "トリプルトライアド：カードバトルルーム"
+  },
+  {
+    "duty_id": 196,
+    "duty_name": "稀書回収 グブラ幻想図書館 (Hard)"
+  },
+  {
+    "duty_id": 197,
+    "duty_name": "LoVM：プレイヤー対戦 (RP変動あり)"
+  },
+  {
+    "duty_id": 198,
+    "duty_name": "LoVM：大会対戦 (プレイヤー対戦）"
+  },
+  {
+    "duty_id": 199,
+    "duty_name": "LoVM：プレイヤー対戦 (RP変動なし)"
+  },
+  {
+    "duty_id": 202,
+    "duty_name": "雲海探索 ディアデム諸島：狩猟限定 (Easy)"
+  },
+  {
+    "duty_id": 203,
+    "duty_name": "雲海探索 ディアデム諸島：狩猟限定"
+  },
+  {
+    "duty_id": 204,
+    "duty_name": "死者の宮殿 B51～B60"
+  },
+  {
+    "duty_id": 205,
+    "duty_name": "死者の宮殿 B61～B70"
+  },
+  {
+    "duty_id": 206,
+    "duty_name": "死者の宮殿 B71～B80"
+  },
+  {
+    "duty_id": 207,
+    "duty_name": "死者の宮殿 B81～B90"
+  },
+  {
+    "duty_id": 208,
+    "duty_name": "死者の宮殿 B91～B100"
+  },
+  {
+    "duty_id": 209,
+    "duty_name": "死者の宮殿 B101～B110"
+  },
+  {
+    "duty_id": 210,
+    "duty_name": "死者の宮殿 B111～B120"
+  },
+  {
+    "duty_id": 211,
+    "duty_name": "死者の宮殿 B121～B130"
+  },
+  {
+    "duty_id": 212,
+    "duty_name": "死者の宮殿 B131～B140"
+  },
+  {
+    "duty_id": 213,
+    "duty_name": "死者の宮殿 B141～B150"
+  },
+  {
+    "duty_id": 214,
+    "duty_name": "死者の宮殿 B151～B160"
+  },
+  {
+    "duty_id": 215,
+    "duty_name": "死者の宮殿 B161～B170"
+  },
+  {
+    "duty_id": 216,
+    "duty_name": "死者の宮殿 B171～B180"
+  },
+  {
+    "duty_id": 217,
+    "duty_name": "死者の宮殿 B181～B190"
+  },
+  {
+    "duty_id": 218,
+    "duty_name": "死者の宮殿 B191～B200"
+  },
+  {
+    "duty_id": 219,
+    "duty_name": "巨大防壁 バエサルの長城"
+  },
+  {
+    "duty_id": 220,
+    "duty_name": "影の国ダン・スカー"
+  },
+  {
+    "duty_id": 221,
+    "duty_name": "霊峰浄化 ソーム・アル (Hard)"
+  },
+  {
+    "duty_id": 222,
+    "duty_name": "カルテノー平原遭遇戦"
+  },
+  {
+    "duty_id": 223,
+    "duty_name": "鬼神ズルワーン討滅戦"
+  },
+  {
+    "duty_id": 224,
+    "duty_name": "極鬼神ズルワーン討滅戦"
+  },
+  {
+    "duty_id": 225,
+    "duty_name": "雲海探索 ディアデム諸島 (狩猟)"
+  },
+  {
+    "duty_id": 234,
+    "duty_name": "雲海探索 ディアデム諸島 (採集)"
+  },
+  {
+    "duty_id": 235,
+    "duty_name": "海底宮殿 紫水宮"
+  },
+  {
+    "duty_id": 236,
+    "duty_name": "壊神修行 星導山寺院"
+  },
+  {
+    "duty_id": 237,
+    "duty_name": "ギョドウ現る！"
+  },
+  {
+    "duty_id": 238,
+    "duty_name": "漂流海域 セイレーン海"
+  },
+  {
+    "duty_id": 239,
+    "duty_name": "神龍討滅戦"
+  },
+  {
+    "duty_id": 240,
+    "duty_name": "伝統試練 バルダム覇道"
+  },
+  {
+    "duty_id": 241,
+    "duty_name": "解放決戦 ドマ城"
+  },
+  {
+    "duty_id": 242,
+    "duty_name": "巨砲要塞 カストルム・アバニア"
+  },
+  {
+    "duty_id": 243,
+    "duty_name": "スサノオ討滅戦"
+  },
+  {
+    "duty_id": 244,
+    "duty_name": "極スサノオ討滅戦"
+  },
+  {
+    "duty_id": 245,
+    "duty_name": "抗う力"
+  },
+  {
+    "duty_id": 246,
+    "duty_name": "終節の合戦"
+  },
+  {
+    "duty_id": 247,
+    "duty_name": "紅蓮決戦 アラミゴ"
+  },
+  {
+    "duty_id": 248,
+    "duty_name": "海都を震わす人斬りの宴！"
+  },
+  {
+    "duty_id": 249,
+    "duty_name": "極悪人コガラシ"
+  },
+  {
+    "duty_id": 250,
+    "duty_name": "松葉門外の変"
+  },
+  {
+    "duty_id": 251,
+    "duty_name": "ベッコウ島の決闘"
+  },
+  {
+    "duty_id": 252,
+    "duty_name": "次元の狭間オメガ：デルタ編1"
+  },
+  {
+    "duty_id": 253,
+    "duty_name": "次元の狭間オメガ：デルタ編2"
+  },
+  {
+    "duty_id": 254,
+    "duty_name": "次元の狭間オメガ：デルタ編3"
+  },
+  {
+    "duty_id": 255,
+    "duty_name": "次元の狭間オメガ：デルタ編4"
+  },
+  {
+    "duty_id": 256,
+    "duty_name": "次元の狭間オメガ零式：デルタ編1"
+  },
+  {
+    "duty_id": 257,
+    "duty_name": "次元の狭間オメガ零式：デルタ編2"
+  },
+  {
+    "duty_id": 258,
+    "duty_name": "次元の狭間オメガ零式：デルタ編3"
+  },
+  {
+    "duty_id": 259,
+    "duty_name": "次元の狭間オメガ零式：デルタ編4"
+  },
+  {
+    "duty_id": 260,
+    "duty_name": "原初的な彼女"
+  },
+  {
+    "duty_id": 261,
+    "duty_name": "ウル王杯闘技会の始まり"
+  },
+  {
+    "duty_id": 262,
+    "duty_name": "悪党成敗 クガネ城"
+  },
+  {
+    "duty_id": 263,
+    "duty_name": "ラクシュミ討滅戦"
+  },
+  {
+    "duty_id": 264,
+    "duty_name": "極ラクシュミ討滅戦"
+  },
+  {
+    "duty_id": 265,
+    "duty_name": "時をかける願い"
+  },
+  {
+    "duty_id": 266,
+    "duty_name": "燃えよゴージ！"
+  },
+  {
+    "duty_id": 267,
+    "duty_name": "漆黒の巨竜"
+  },
+  {
+    "duty_id": 268,
+    "duty_name": "宝物庫 ウズネアカナル"
+  },
+  {
+    "duty_id": 269,
+    "duty_name": "ウリエンジェの秘策"
+  },
+  {
+    "duty_id": 270,
+    "duty_name": "さらなる剣術の高みへ"
+  },
+  {
+    "duty_id": 271,
+    "duty_name": "あと三度、遥かな憧憬"
+  },
+  {
+    "duty_id": 272,
+    "duty_name": "あと一度、君に会えたら"
+  },
+  {
+    "duty_id": 273,
+    "duty_name": "紅の竜騎士"
+  },
+  {
+    "duty_id": 274,
+    "duty_name": "影隠忍法帖"
+  },
+  {
+    "duty_id": 275,
+    "duty_name": "次元の狭間：外縁"
+  },
+  {
+    "duty_id": 276,
+    "duty_name": "宝物庫 ウズネアカナル深層"
+  },
+  {
+    "duty_id": 277,
+    "duty_name": "アストラガロス (機工戦)"
+  },
+  {
+    "duty_id": 278,
+    "duty_name": "極神龍討滅戦"
+  },
+  {
+    "duty_id": 279,
+    "duty_name": "水没遺構 スカラ"
+  },
+  {
+    "duty_id": 280,
+    "duty_name": "絶バハムート討滅戦"
+  },
+  {
+    "duty_id": 281,
+    "duty_name": "失われた都 ラバナスタ"
+  },
+  {
+    "duty_id": 282,
+    "duty_name": "英雄の帰還"
+  },
+  {
+    "duty_id": 283,
+    "duty_name": "禁断の地 エウレカ：アネモス編"
+  },
+  {
+    "duty_id": 284,
+    "duty_name": "紅玉火山 獄之蓋"
+  },
+  {
+    "duty_id": 285,
+    "duty_name": "暴走戦艦 フラクタル・コンティニアム (Hard)"
+  },
+  {
+    "duty_id": 286,
+    "duty_name": "次元の狭間オメガ：シグマ編1"
+  },
+  {
+    "duty_id": 287,
+    "duty_name": "次元の狭間オメガ：シグマ編2"
+  },
+  {
+    "duty_id": 288,
+    "duty_name": "次元の狭間オメガ：シグマ編3"
+  },
+  {
+    "duty_id": 289,
+    "duty_name": "次元の狭間オメガ：シグマ編4"
+  },
+  {
+    "duty_id": 290,
+    "duty_name": "白虎征魂戦"
+  },
+  {
+    "duty_id": 291,
+    "duty_name": "極白虎征魂戦"
+  },
+  {
+    "duty_id": 292,
+    "duty_name": "次元の狭間オメガ零式：シグマ編1"
+  },
+  {
+    "duty_id": 293,
+    "duty_name": "次元の狭間オメガ零式：シグマ編2"
+  },
+  {
+    "duty_id": 294,
+    "duty_name": "次元の狭間オメガ零式：シグマ編3"
+  },
+  {
+    "duty_id": 295,
+    "duty_name": "次元の狭間オメガ零式：シグマ編4"
+  },
+  {
+    "duty_id": 473,
+    "duty_name": "ヴァレンティオンセレモニー"
+  },
+  {
+    "duty_id": 474,
+    "duty_name": "リオレウス狩猟戦"
+  },
+  {
+    "duty_id": 475,
+    "duty_name": "極リオレウス狩猟戦"
+  },
+  {
+    "duty_id": 481,
+    "duty_name": "チョコボレース：チュートリアル"
+  },
+  {
+    "duty_id": 482,
+    "duty_name": "第1節：インコースを狙え"
+  },
+  {
+    "duty_id": 483,
+    "duty_name": "第2節：範囲攻撃を避けろ"
+  },
+  {
+    "duty_id": 484,
+    "duty_name": "第3節：アビリティに頼るな"
+  },
+  {
+    "duty_id": 485,
+    "duty_name": "第4節：ヘヴィなレース"
+  },
+  {
+    "duty_id": 486,
+    "duty_name": "第5節：とんずらを阻止せよ"
+  },
+  {
+    "duty_id": 487,
+    "duty_name": "第6節：ライバルを叩け"
+  },
+  {
+    "duty_id": 488,
+    "duty_name": "第7節：フィールド・オブ・ドリームズ"
+  },
+  {
+    "duty_id": 489,
+    "duty_name": "第8節：漁夫の利を狙え"
+  },
+  {
+    "duty_id": 490,
+    "duty_name": "第9節：スタミナの戦い"
+  },
+  {
+    "duty_id": 491,
+    "duty_name": "第10節：逃げる者と追う者と"
+  },
+  {
+    "duty_id": 492,
+    "duty_name": "第11節：全速で駆け抜けろ"
+  },
+  {
+    "duty_id": 493,
+    "duty_name": "第12節：アビリティを駆使せよ"
+  },
+  {
+    "duty_id": 494,
+    "duty_name": "第13節：連携プレイに勝利せよ"
+  },
+  {
+    "duty_id": 495,
+    "duty_name": "第14節：続ヘヴィなレース"
+  },
+  {
+    "duty_id": 496,
+    "duty_name": "第15節：究極のレース"
+  },
+  {
+    "duty_id": 497,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 498,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 499,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 500,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 501,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 502,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 503,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 504,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 505,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 506,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 507,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 508,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 509,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 510,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 511,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 512,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 513,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 514,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 515,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 516,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 517,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 518,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 519,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 520,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 521,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 522,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 523,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 524,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 525,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 526,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 527,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 528,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 529,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 530,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 531,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 532,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 533,
+    "duty_name": "チョコボレース：サゴリーロード"
+  },
+  {
+    "duty_id": 534,
+    "duty_name": "チョコボレース：コスタ・デル・ソル"
+  },
+  {
+    "duty_id": 535,
+    "duty_name": "チョコボレース：トランキルパス"
+  },
+  {
+    "duty_id": 536,
+    "duty_name": "風水霊殿 ガンエン廟"
+  },
+  {
+    "duty_id": 537,
+    "duty_name": "ツクヨミ討滅戦"
+  },
+  {
+    "duty_id": 538,
+    "duty_name": "極ツクヨミ討滅戦"
+  },
+  {
+    "duty_id": 539,
+    "duty_name": "絶アルテマウェポン破壊作戦"
+  },
+  {
+    "duty_id": 540,
+    "duty_name": "アメノミハシラ 1～10層"
+  },
+  {
+    "duty_id": 541,
+    "duty_name": "アメノミハシラ 11～20層"
+  },
+  {
+    "duty_id": 542,
+    "duty_name": "アメノミハシラ 21～30層"
+  },
+  {
+    "duty_id": 543,
+    "duty_name": "アメノミハシラ 31～40層"
+  },
+  {
+    "duty_id": 544,
+    "duty_name": "アメノミハシラ 41～50層"
+  },
+  {
+    "duty_id": 545,
+    "duty_name": "アメノミハシラ 51～60層"
+  },
+  {
+    "duty_id": 546,
+    "duty_name": "アメノミハシラ 61～70層"
+  },
+  {
+    "duty_id": 547,
+    "duty_name": "アメノミハシラ 71～80層"
+  },
+  {
+    "duty_id": 548,
+    "duty_name": "アメノミハシラ 81～90層"
+  },
+  {
+    "duty_id": 549,
+    "duty_name": "アメノミハシラ 91～100層"
+  },
+  {
+    "duty_id": 550,
+    "duty_name": "封じられた聖塔 リドルアナ"
+  },
+  {
+    "duty_id": 552,
+    "duty_name": "第1節：チュートリアル"
+  },
+  {
+    "duty_id": 553,
+    "duty_name": "第2節：チョコチョコチョコチョコボ"
+  },
+  {
+    "duty_id": 554,
+    "duty_name": "第3節：序盤にありそうな戦い"
+  },
+  {
+    "duty_id": 555,
+    "duty_name": "第4節：小さな巨獣"
+  },
+  {
+    "duty_id": 556,
+    "duty_name": "第5節：蛮族たちの反乱"
+  },
+  {
+    "duty_id": 557,
+    "duty_name": "第6節：恐怖、タラタラの墓所"
+  },
+  {
+    "duty_id": 558,
+    "duty_name": "第7節：ライバルたちの共闘"
+  },
+  {
+    "duty_id": 559,
+    "duty_name": "第8節：暁は光と闇とを分かつ"
+  },
+  {
+    "duty_id": 560,
+    "duty_name": "第9節：爆破、カパカパベル銅山"
+  },
+  {
+    "duty_id": 561,
+    "duty_name": "第10節：マンドラ帝国の逆襲"
+  },
+  {
+    "duty_id": 562,
+    "duty_name": "第11節：女王陛下万歳！"
+  },
+  {
+    "duty_id": 563,
+    "duty_name": "第12節：デモンズブロック崩し"
+  },
+  {
+    "duty_id": 564,
+    "duty_name": "第13節：筆頭機工師ガーロンド"
+  },
+  {
+    "duty_id": 565,
+    "duty_name": "第14節：ナッツの味にはもう飽きた"
+  },
+  {
+    "duty_id": 566,
+    "duty_name": "第15節：極小オーディン討滅戦"
+  },
+  {
+    "duty_id": 567,
+    "duty_name": "第16節：チョコボ大行進"
+  },
+  {
+    "duty_id": 568,
+    "duty_name": "第17節：融解、スノークローク小氷壁"
+  },
+  {
+    "duty_id": 569,
+    "duty_name": "第18節：小さなモブハント"
+  },
+  {
+    "duty_id": 570,
+    "duty_name": "第19節：極小ギルガメッシュ討滅戦"
+  },
+  {
+    "duty_id": 571,
+    "duty_name": "第20節：汝にクリスタルの導きあれ"
+  },
+  {
+    "duty_id": 572,
+    "duty_name": "第21節：賢人ルイゾワの試練"
+  },
+  {
+    "duty_id": 573,
+    "duty_name": "第22節：薄闇の世界"
+  },
+  {
+    "duty_id": 574,
+    "duty_name": "第23節：大迷惑バハムート邂逅編"
+  },
+  {
+    "duty_id": 575,
+    "duty_name": "第24節：大迷惑バハムート真成編"
+  },
+  {
+    "duty_id": 576,
+    "duty_name": "LoVM：ミニオンクラス (Easy)"
+  },
+  {
+    "duty_id": 577,
+    "duty_name": "LoVM：真ミニオンクラス (Normal)"
+  },
+  {
+    "duty_id": 578,
+    "duty_name": "LoVM：極ミニオンクラス (Hard)"
+  },
+  {
+    "duty_id": 579,
+    "duty_name": "LoVM：大会対戦 (CPU対戦)"
+  },
+  {
+    "duty_id": 581,
+    "duty_name": "禁断の地 エウレカ：パゴス編"
+  },
+  {
+    "duty_id": 582,
+    "duty_name": "「暁」の少年"
+  },
+  {
+    "duty_id": 583,
+    "duty_name": "新生祭軍事演習"
+  },
+  {
+    "duty_id": 584,
+    "duty_name": "草木汚染 聖モシャーヌ植物園 (Hard)"
+  },
+  {
+    "duty_id": 585,
+    "duty_name": "永久焦土 ザ・バーン"
+  },
+  {
+    "duty_id": 586,
+    "duty_name": "宝物庫 ウズネアカナル祭殿"
+  },
+  {
+    "duty_id": 587,
+    "duty_name": "次元の狭間オメガ：アルファ編1"
+  },
+  {
+    "duty_id": 588,
+    "duty_name": "次元の狭間オメガ：アルファ編2"
+  },
+  {
+    "duty_id": 589,
+    "duty_name": "次元の狭間オメガ：アルファ編3"
+  },
+  {
+    "duty_id": 590,
+    "duty_name": "次元の狭間オメガ：アルファ編4"
+  },
+  {
+    "duty_id": 591,
+    "duty_name": "次元の狭間オメガ零式：アルファ編1"
+  },
+  {
+    "duty_id": 592,
+    "duty_name": "次元の狭間オメガ零式：アルファ編2"
+  },
+  {
+    "duty_id": 593,
+    "duty_name": "次元の狭間オメガ零式：アルファ編3"
+  },
+  {
+    "duty_id": 594,
+    "duty_name": "次元の狭間オメガ零式：アルファ編4"
+  },
+  {
+    "duty_id": 595,
+    "duty_name": "真ヨウジンボウ討滅戦"
+  },
+  {
+    "duty_id": 596,
+    "duty_name": "朱雀征魂戦"
+  },
+  {
+    "duty_id": 597,
+    "duty_name": "極朱雀征魂戦"
+  },
+  {
+    "duty_id": 598,
+    "duty_name": "禁断の地 エウレカ：ピューロス編"
+  },
+  {
+    "duty_id": 599,
+    "duty_name": "ヒドゥンゴージ (機工戦)"
+  },
+  {
+    "duty_id": 600,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 601,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 602,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 603,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 604,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 605,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 606,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 607,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 608,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 609,
+    "duty_name": "楔石の虚"
+  },
+  {
+    "duty_id": 610,
+    "duty_name": "デビューマッチ"
+  },
+  {
+    "duty_id": 611,
+    "duty_name": "境界戦線 ギムリトダーク"
+  },
+  {
+    "duty_id": 612,
+    "duty_name": "プリン・アラモード"
+  },
+  {
+    "duty_id": 613,
+    "duty_name": "最初の岩壁「シパクナー」"
+  },
+  {
+    "duty_id": 614,
+    "duty_name": "怪力の鉄巨人「クレイオス」"
+  },
+  {
+    "duty_id": 615,
+    "duty_name": "ギルガメブラザーズ"
+  },
+  {
+    "duty_id": 616,
+    "duty_name": "ブラインド・フューリー"
+  },
+  {
+    "duty_id": 617,
+    "duty_name": "シアーハートアタック"
+  },
+  {
+    "duty_id": 618,
+    "duty_name": "青い牙、赤い牙"
+  },
+  {
+    "duty_id": 619,
+    "duty_name": "七色の甘味「ギモーヴ」"
+  },
+  {
+    "duty_id": 620,
+    "duty_name": "偶像の王者「クロムドゥーブ」"
+  },
+  {
+    "duty_id": 621,
+    "duty_name": "爆ボム・ファーストアタック"
+  },
+  {
+    "duty_id": 622,
+    "duty_name": "寄生植物「ヒドノラ」"
+  },
+  {
+    "duty_id": 623,
+    "duty_name": "紅の死妖姫「カーミラ」"
+  },
+  {
+    "duty_id": 624,
+    "duty_name": "死なばもろともーッ！"
+  },
+  {
+    "duty_id": 625,
+    "duty_name": "アラグの脅威「闘獣システム」"
+  },
+  {
+    "duty_id": 626,
+    "duty_name": "豪腕の獣王「ティクバラン」"
+  },
+  {
+    "duty_id": 627,
+    "duty_name": "剛柔の鉄巨人「クレイオス改」"
+  },
+  {
+    "duty_id": 628,
+    "duty_name": "爆破デスマッチ"
+  },
+  {
+    "duty_id": 629,
+    "duty_name": "魅惑の芳香「リフレクティブ・レベッカ」"
+  },
+  {
+    "duty_id": 630,
+    "duty_name": "名コンビ「オルトロス＆テュポーン」"
+  },
+  {
+    "duty_id": 631,
+    "duty_name": "憤怒の合成獣「アペデマク」"
+  },
+  {
+    "duty_id": 632,
+    "duty_name": "爆発の対消滅「グランパボム」"
+  },
+  {
+    "duty_id": 633,
+    "duty_name": "魔獣の皇太子「クロンプリンツ・ベヒーモス」"
+  },
+  {
+    "duty_id": 634,
+    "duty_name": "異形の人形師「エペロギ」"
+  },
+  {
+    "duty_id": 635,
+    "duty_name": "悪の青魔道士「アポカリョープス」"
+  },
+  {
+    "duty_id": 636,
+    "duty_name": "楽欲の僧院 オーボンヌ"
+  },
+  {
+    "duty_id": 637,
+    "duty_name": "青龍征魂戦"
+  },
+  {
+    "duty_id": 638,
+    "duty_name": "極青龍征魂戦"
+  },
+  {
+    "duty_id": 639,
+    "duty_name": "禁断の地 エウレカ：ヒュダトス編"
+  },
+  {
+    "duty_id": 640,
+    "duty_name": "出撃！ エアフォースパイロット"
+  },
+  {
+    "duty_id": 641,
+    "duty_name": "出撃！ エアフォースパイロット"
+  },
+  {
+    "duty_id": 642,
+    "duty_name": "出撃！ エアフォースパイロット"
+  },
+  {
+    "duty_id": 643,
+    "duty_name": "ドマ式麻雀：半荘戦一般卓 (段位変動有り)"
+  },
+  {
+    "duty_id": 644,
+    "duty_name": "ドマ式麻雀：半荘戦有段卓 (段位変動有り)"
+  },
+  {
+    "duty_id": 645,
+    "duty_name": "ドマ式麻雀：半荘戦4人セット卓 (クイタン有り)"
+  },
+  {
+    "duty_id": 646,
+    "duty_name": "来訪せし風の御使"
+  },
+  {
+    "duty_id": 648,
+    "duty_name": "英雄への鎮魂歌"
+  },
+  {
+    "duty_id": 649,
+    "duty_name": "水妖幻園 ドォーヌ・メグ"
+  },
+  {
+    "duty_id": 650,
+    "duty_name": "ドマ式麻雀：半荘戦4人セット卓 (クイタン無し)"
+  },
+  {
+    "duty_id": 651,
+    "duty_name": "古跡探索 キタンナ神影洞"
+  },
+  {
+    "duty_id": 652,
+    "duty_name": "終末幻想 アーモロート"
+  },
+  {
+    "duty_id": 653,
+    "duty_name": "希望の園エデン：覚醒編1"
+  },
+  {
+    "duty_id": 654,
+    "duty_name": "希望の園エデン零式：覚醒編1"
+  },
+  {
+    "duty_id": 655,
+    "duty_name": "異界遺構 シルクス・ツイニング"
+  },
+  {
+    "duty_id": 656,
+    "duty_name": "爽涼離宮 マリカの大井戸"
+  },
+  {
+    "duty_id": 657,
+    "duty_name": "ティターニア討滅戦"
+  },
+  {
+    "duty_id": 658,
+    "duty_name": "極ティターニア討滅戦"
+  },
+  {
+    "duty_id": 659,
+    "duty_name": "偽造天界 グルグ火山"
+  },
+  {
+    "duty_id": 661,
+    "duty_name": "創造機関 アナイダアカデミア"
+  },
+  {
+    "duty_id": 666,
+    "duty_name": "イノセンス討滅戦"
+  },
+  {
+    "duty_id": 667,
+    "duty_name": "極イノセンス討滅戦"
+  },
+  {
+    "duty_id": 676,
+    "duty_name": "殺戮郷村 ホルミンスター"
+  },
+  {
+    "duty_id": 678,
+    "duty_name": "揺れる天秤"
+  },
+  {
+    "duty_id": 679,
+    "duty_name": "古の大再生魔法"
+  },
+  {
+    "duty_id": 680,
+    "duty_name": "廃都ナバスアレン"
+  },
+  {
+    "duty_id": 681,
+    "duty_name": "仕掛けと呪いと毒と"
+  },
+  {
+    "duty_id": 682,
+    "duty_name": "希望の園エデン：覚醒編3"
+  },
+  {
+    "duty_id": 683,
+    "duty_name": "希望の園エデン零式：覚醒編3"
+  },
+  {
+    "duty_id": 684,
+    "duty_name": "希望の園エデン：覚醒編2"
+  },
+  {
+    "duty_id": 685,
+    "duty_name": "希望の園エデン零式：覚醒編2"
+  },
+  {
+    "duty_id": 686,
+    "duty_name": "ナイルベルトの後悔"
+  },
+  {
+    "duty_id": 687,
+    "duty_name": "ハーデス討滅戦"
+  },
+  {
+    "duty_id": 688,
+    "duty_name": "宝物庫 リェー・ギア・ダンジョン"
+  },
+  {
+    "duty_id": 689,
+    "duty_name": "希望の園エデン：覚醒編4"
+  },
+  {
+    "duty_id": 690,
+    "duty_name": "希望の園エデン零式：覚醒編4"
+  },
+  {
+    "duty_id": 691,
+    "duty_name": "勇気の狩人"
+  },
+  {
+    "duty_id": 692,
+    "duty_name": "魔法宮殿 グラン・コスモス"
+  },
+  {
+    "duty_id": 693,
+    "duty_name": "極ハーデス討滅戦"
+  },
+  {
+    "duty_id": 694,
+    "duty_name": "絶アレキサンダー討滅戦"
+  },
+  {
+    "duty_id": 695,
+    "duty_name": "豪腕の父親「フンババ・パパ」"
+  },
+  {
+    "duty_id": 696,
+    "duty_name": "はないき爆破デスマッチ"
+  },
+  {
+    "duty_id": 697,
+    "duty_name": "至妙の傀儡子「ドゥリン」"
+  },
+  {
+    "duty_id": 698,
+    "duty_name": "水と炎の歌"
+  },
+  {
+    "duty_id": 699,
+    "duty_name": "世界一の剣士「ジークフリード」"
+  },
+  {
+    "duty_id": 700,
+    "duty_name": "複製サレタ工場廃墟"
+  },
+  {
+    "duty_id": 701,
+    "duty_name": "オンサル・ハカイル (終節戦)"
+  },
+  {
+    "duty_id": 702,
+    "duty_name": "白き誓約、黒き密約"
+  },
+  {
+    "duty_id": 703,
+    "duty_name": "この心が望むがままに"
+  },
+  {
+    "duty_id": 705,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 706,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 707,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 708,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 709,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 710,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 711,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 712,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 713,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 714,
+    "duty_name": "黒風海底 アニドラス・アナムネーシス"
+  },
+  {
+    "duty_id": 715,
+    "duty_name": "希望の園エデン：共鳴編1"
+  },
+  {
+    "duty_id": 716,
+    "duty_name": "希望の園エデン零式：共鳴編1"
+  },
+  {
+    "duty_id": 717,
+    "duty_name": "ルビーウェポン破壊作戦"
+  },
+  {
+    "duty_id": 718,
+    "duty_name": "極ルビーウェポン破壊作戦"
+  },
+  {
+    "duty_id": 719,
+    "duty_name": "希望の園エデン：共鳴編2"
+  },
+  {
+    "duty_id": 720,
+    "duty_name": "希望の園エデン零式：共鳴編2"
+  },
+  {
+    "duty_id": 721,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 722,
+    "duty_name": "雲海採集 ディアデム諸島"
+  },
+  {
+    "duty_id": 723,
+    "duty_name": "シタデル・ボズヤ蒸発事変"
+  },
+  {
+    "duty_id": 724,
+    "duty_name": "汝、英雄の眠り妨げるは"
+  },
+  {
+    "duty_id": 725,
+    "duty_name": "極シタデル・ボズヤ追憶戦"
+  },
+  {
+    "duty_id": 726,
+    "duty_name": "希望の園エデン：共鳴編3"
+  },
+  {
+    "duty_id": 727,
+    "duty_name": "希望の園エデン零式：共鳴編3"
+  },
+  {
+    "duty_id": 728,
+    "duty_name": "希望の園エデン：共鳴編4"
+  },
+  {
+    "duty_id": 729,
+    "duty_name": "希望の園エデン零式：共鳴編4"
+  },
+  {
+    "duty_id": 730,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 731,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 732,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 733,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 734,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 735,
+    "duty_name": "南方ボズヤ戦線"
+  },
+  {
+    "duty_id": 736,
+    "duty_name": "人形タチノ軍事基地"
+  },
+  {
+    "duty_id": 737,
+    "duty_name": "漆黒決戦 ノルヴラント"
+  },
+  {
+    "duty_id": 738,
+    "duty_name": "ウォーリア・オブ・ライト討滅戦"
+  },
+  {
+    "duty_id": 739,
+    "duty_name": "極ウォーリア・オブ・ライト討滅戦"
+  },
+  {
+    "duty_id": 740,
+    "duty_name": "飛べ！ ウェルリトへ "
+  },
+  {
+    "duty_id": 741,
+    "duty_name": "飛べ！ ウェルリトへ "
+  },
+  {
+    "duty_id": 742,
+    "duty_name": "雲海採集 ディアデム諸島"
+  },
+  {
+    "duty_id": 743,
+    "duty_name": "色あせた記憶"
+  },
+  {
+    "duty_id": 745,
+    "duty_name": "宝物庫 リェー・ギア・ダンジョン祭殿"
+  },
+  {
+    "duty_id": 746,
+    "duty_name": "魔術工房 マトーヤのアトリエ"
+  },
+  {
+    "duty_id": 747,
+    "duty_name": "希望の園エデン：再生編2"
+  },
+  {
+    "duty_id": 748,
+    "duty_name": "希望の園エデン零式：再生編2"
+  },
+  {
+    "duty_id": 749,
+    "duty_name": "希望の園エデン：再生編1"
+  },
+  {
+    "duty_id": 750,
+    "duty_name": "希望の園エデン零式：再生編1"
+  },
+  {
+    "duty_id": 751,
+    "duty_name": "希望の園エデン：再生編3"
+  },
+  {
+    "duty_id": 752,
+    "duty_name": "希望の園エデン零式：再生編3"
+  },
+  {
+    "duty_id": 753,
+    "duty_name": "雲海採集 ディアデム諸島"
+  },
+  {
+    "duty_id": 754,
+    "duty_name": "黄金頭巾「ものまね士ゴゴ」"
+  },
+  {
+    "duty_id": 755,
+    "duty_name": "トリプルトライアド：オフィシャルトーナメント"
+  },
+  {
+    "duty_id": 756,
+    "duty_name": "トリプルトライアド：カスタムトーナメントルーム"
+  },
+  {
+    "duty_id": 758,
+    "duty_name": "希望の園エデン：再生編4"
+  },
+  {
+    "duty_id": 759,
+    "duty_name": "希望の園エデン零式：再生編4"
+  },
+  {
+    "duty_id": 760,
+    "duty_name": "グンヒルド・ディルーブラム"
+  },
+  {
+    "duty_id": 761,
+    "duty_name": "グンヒルド・ディルーブラム零式"
+  },
+  {
+    "duty_id": 762,
+    "duty_name": "エメラルドウェポン破壊作戦"
+  },
+  {
+    "duty_id": 763,
+    "duty_name": "極エメラルドウェポン破壊作戦"
+  },
+  {
+    "duty_id": 764,
+    "duty_name": "バイルブランドの船出"
+  },
+  {
+    "duty_id": 765,
+    "duty_name": "ゴッド・セイブ・ザ・クイーン"
+  },
+  {
+    "duty_id": 766,
+    "duty_name": "ドマ式麻雀：東風戦一般卓 (段位変動有り)"
+  },
+  {
+    "duty_id": 767,
+    "duty_name": "ドマ式麻雀：東風戦有段卓 (段位変動有り)"
+  },
+  {
+    "duty_id": 768,
+    "duty_name": "ドマ式麻雀：東風戦4人セット卓 (クイタン有り)"
+  },
+  {
+    "duty_id": 769,
+    "duty_name": "ドマ式麻雀：東風戦4人セット卓 (クイタン無し)"
+  },
+  {
+    "duty_id": 770,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 771,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 772,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 773,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 774,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 775,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 777,
+    "duty_name": "黄金平原 パガルザン"
+  },
+  {
+    "duty_id": 778,
+    "duty_name": "ザトゥノル高原"
+  },
+  {
+    "duty_id": 779,
+    "duty_name": "希望ノ砲台：「塔」"
+  },
+  {
+    "duty_id": 780,
+    "duty_name": "黎明の死闘"
+  },
+  {
+    "duty_id": 781,
+    "duty_name": "ダイヤウェポン捕獲作戦"
+  },
+  {
+    "duty_id": 782,
+    "duty_name": "極ダイヤウェポン捕獲作戦"
+  },
+  {
+    "duty_id": 783,
+    "duty_name": "異形楼閣 ゾットの塔"
+  },
+  {
+    "duty_id": 784,
+    "duty_name": "電脳夢想 スティグマ・フォー"
+  },
+  {
+    "duty_id": 785,
+    "duty_name": "魔導神門 バブイルの塔"
+  },
+  {
+    "duty_id": 786,
+    "duty_name": "星海潜航 アイティオン星晶鏡"
+  },
+  {
+    "duty_id": 787,
+    "duty_name": "創造環境 ヒュペルボレア造物院"
+  },
+  {
+    "duty_id": 788,
+    "duty_name": "絶竜詩戦争"
+  },
+  {
+    "duty_id": 789,
+    "duty_name": "終末樹海 ヴァナスパティ"
+  },
+  {
+    "duty_id": 790,
+    "duty_name": "ハイデリン討滅戦"
+  },
+  {
+    "duty_id": 791,
+    "duty_name": "極ハイデリン討滅戦"
+  },
+  {
+    "duty_id": 792,
+    "duty_name": "最終幻想 レムナント"
+  },
+  {
+    "duty_id": 793,
+    "duty_name": "寒夜のこと"
+  },
+  {
+    "duty_id": 794,
+    "duty_name": "楽園都市 スマイルトン"
+  },
+  {
+    "duty_id": 795,
+    "duty_name": "前代アゼムの手ほどき"
+  },
+  {
+    "duty_id": 796,
+    "duty_name": "終焉の戦い"
+  },
+  {
+    "duty_id": 797,
+    "duty_name": "道化饗宴 ホーンテッドフィースト"
+  },
+  {
+    "duty_id": 798,
+    "duty_name": "暁月のフィナーレ"
+  },
+  {
+    "duty_id": 799,
+    "duty_name": "融和への船出"
+  },
+  {
+    "duty_id": 800,
+    "duty_name": "万魔殿パンデモニウム：辺獄編4"
+  },
+  {
+    "duty_id": 801,
+    "duty_name": "万魔殿パンデモニウム零式：辺獄編4"
+  },
+  {
+    "duty_id": 802,
+    "duty_name": "ゾディアーク討滅戦"
+  },
+  {
+    "duty_id": 803,
+    "duty_name": "極ゾディアーク討滅戦"
+  },
+  {
+    "duty_id": 804,
+    "duty_name": "拡がる終末"
+  },
+  {
+    "duty_id": 805,
+    "duty_name": "開かれた道の先へ"
+  },
+  {
+    "duty_id": 806,
+    "duty_name": "万魔殿パンデモニウム：辺獄編3"
+  },
+  {
+    "duty_id": 807,
+    "duty_name": "万魔殿パンデモニウム零式：辺獄編3"
+  },
+  {
+    "duty_id": 808,
+    "duty_name": "万魔殿パンデモニウム：辺獄編1"
+  },
+  {
+    "duty_id": 809,
+    "duty_name": "万魔殿パンデモニウム零式：辺獄編1"
+  },
+  {
+    "duty_id": 810,
+    "duty_name": "万魔殿パンデモニウム：辺獄編2"
+  },
+  {
+    "duty_id": 811,
+    "duty_name": "万魔殿パンデモニウム零式：辺獄編2"
+  },
+  {
+    "duty_id": 812,
+    "duty_name": "霜雪を踏みしめて"
+  },
+  {
+    "duty_id": 813,
+    "duty_name": "賢者の短杖"
+  },
+  {
+    "duty_id": 814,
+    "duty_name": "大鎌の意味"
+  },
+  {
+    "duty_id": 815,
+    "duty_name": "蒼天を仰ぎ、歩み続ける"
+  },
+  {
+    "duty_id": 816,
+    "duty_name": "暗殺道"
+  },
+  {
+    "duty_id": 817,
+    "duty_name": "人命は儚く、術のみちは永久に"
+  },
+  {
+    "duty_id": 818,
+    "duty_name": "ドマの弔い"
+  },
+  {
+    "duty_id": 819,
+    "duty_name": "宝物庫 エキサイトロン"
+  },
+  {
+    "duty_id": 820,
+    "duty_name": "僕たちは還り、君を見送ろう"
+  },
+  {
+    "duty_id": 822,
+    "duty_name": "星霊間欠 ハーム島"
+  },
+  {
+    "duty_id": 823,
+    "duty_name": "深淵潜行 月の地下渓谷"
+  },
+  {
+    "duty_id": 824,
+    "duty_name": "山嶺登頂 ウォーコー・ゾーモー"
+  },
+  {
+    "duty_id": 825,
+    "duty_name": "魂魄工廠 オリジェニクス"
+  },
+  {
+    "duty_id": 826,
+    "duty_name": "濁流遡上 イフイカ・トゥム"
+  },
+  {
+    "duty_id": 827,
+    "duty_name": "記憶幻想 アレクサンドリア"
+  },
+  {
+    "duty_id": 828,
+    "duty_name": "王として、父として"
+  },
+  {
+    "duty_id": 829,
+    "duty_name": "遺産踏査 天深きセノーテ"
+  },
+  {
+    "duty_id": 830,
+    "duty_name": "アルテマウェポン破壊作戦"
+  },
+  {
+    "duty_id": 831,
+    "duty_name": "外征前哨 ヴァンガード"
+  },
+  {
+    "duty_id": 832,
+    "duty_name": "ヴァリガルマンダ討滅戦"
+  },
+  {
+    "duty_id": 833,
+    "duty_name": "極ヴァリガルマンダ討滅戦"
+  },
+  {
+    "duty_id": 834,
+    "duty_name": "荒野秘境 サボテンダーバレー"
+  },
+  {
+    "duty_id": 835,
+    "duty_name": "パライストラ"
+  },
+  {
+    "duty_id": 836,
+    "duty_name": "ヴォルカニック・ハート"
+  },
+  {
+    "duty_id": 837,
+    "duty_name": "クラウドナイン"
+  },
+  {
+    "duty_id": 838,
+    "duty_name": "パライストラ"
+  },
+  {
+    "duty_id": 839,
+    "duty_name": "ヴォルカニック・ハート"
+  },
+  {
+    "duty_id": 840,
+    "duty_name": "クラウドナイン"
+  },
+  {
+    "duty_id": 841,
+    "duty_name": "パライストラ"
+  },
+  {
+    "duty_id": 842,
+    "duty_name": "ヴォルカニック・ハート"
+  },
+  {
+    "duty_id": 843,
+    "duty_name": "クラウドナイン"
+  },
+  {
+    "duty_id": 844,
+    "duty_name": "近東秘宝 アルザダール海底遺跡群"
+  },
+  {
+    "duty_id": 845,
+    "duty_name": "ネルウァの帝国"
+  },
+  {
+    "duty_id": 846,
+    "duty_name": "終極の戦い"
+  },
+  {
+    "duty_id": 847,
+    "duty_name": "パライストラ"
+  },
+  {
+    "duty_id": 848,
+    "duty_name": "ヴォルカニック・ハート"
+  },
+  {
+    "duty_id": 849,
+    "duty_name": "クラウドナイン"
+  },
+  {
+    "duty_id": 850,
+    "duty_name": "パライストラ"
+  },
+  {
+    "duty_id": 851,
+    "duty_name": "ヴォルカニック・ハート"
+  },
+  {
+    "duty_id": 852,
+    "duty_name": "クラウドナイン"
+  },
+  {
+    "duty_id": 853,
+    "duty_name": "パライストラ"
+  },
+  {
+    "duty_id": 854,
+    "duty_name": "ヴォルカニック・ハート"
+  },
+  {
+    "duty_id": 855,
+    "duty_name": "クラウドナイン"
+  },
+  {
+    "duty_id": 856,
+    "duty_name": "パライストラ"
+  },
+  {
+    "duty_id": 857,
+    "duty_name": "ヴォルカニック・ハート"
+  },
+  {
+    "duty_id": 858,
+    "duty_name": "クラウドナイン"
+  },
+  {
+    "duty_id": 859,
+    "duty_name": "パライストラ"
+  },
+  {
+    "duty_id": 860,
+    "duty_name": "ヴォルカニック・ハート"
+  },
+  {
+    "duty_id": 861,
+    "duty_name": "クラウドナイン"
+  },
+  {
+    "duty_id": 862,
+    "duty_name": "クリスタルコンフリクト(パライストラ：カスタムマッチ)"
+  },
+  {
+    "duty_id": 863,
+    "duty_name": "クリスタルコンフリクト(ヴォルカニック・ハート：カスタムマッチ)"
+  },
+  {
+    "duty_id": 864,
+    "duty_name": "クリスタルコンフリクト(クラウドナイン：カスタムマッチ)"
+  },
+  {
+    "duty_id": 865,
+    "duty_name": "リットアティン強襲戦"
+  },
+  {
+    "duty_id": 866,
+    "duty_name": "輝ける神域 アグライア"
+  },
+  {
+    "duty_id": 867,
+    "duty_name": "アシエン・ラハブレア討伐戦"
+  },
+  {
+    "duty_id": 868,
+    "duty_name": "ヴァリアントダンジョン シラディハ水道"
+  },
+  {
+    "duty_id": 869,
+    "duty_name": "異界孤城 トロイアコート"
+  },
+  {
+    "duty_id": 870,
+    "duty_name": "バルバリシア討滅戦"
+  },
+  {
+    "duty_id": 871,
+    "duty_name": "極バルバリシア討滅戦"
+  },
+  {
+    "duty_id": 872,
+    "duty_name": "万魔殿パンデモニウム：煉獄編1"
+  },
+  {
+    "duty_id": 873,
+    "duty_name": "万魔殿パンデモニウム零式：煉獄編1"
+  },
+  {
+    "duty_id": 874,
+    "duty_name": "失われた力"
+  },
+  {
+    "duty_id": 876,
+    "duty_name": "万魔殿パンデモニウム：煉獄編3"
+  },
+  {
+    "duty_id": 877,
+    "duty_name": "万魔殿パンデモニウム零式：煉獄編3"
+  },
+  {
+    "duty_id": 878,
+    "duty_name": "アナザーダンジョン 異聞シラディハ水道"
+  },
+  {
+    "duty_id": 879,
+    "duty_name": "アナザーダンジョン 異聞シラディハ水道 零式"
+  },
+  {
+    "duty_id": 880,
+    "duty_name": "万魔殿パンデモニウム：煉獄編2"
+  },
+  {
+    "duty_id": 881,
+    "duty_name": "万魔殿パンデモニウム零式：煉獄編2"
+  },
+  {
+    "duty_id": 883,
+    "duty_name": "万魔殿パンデモニウム：煉獄編4"
+  },
+  {
+    "duty_id": 884,
+    "duty_name": "万魔殿パンデモニウム零式：煉獄編4"
+  },
+  {
+    "duty_id": 885,
+    "duty_name": "皇都イシュガルド防衛戦"
+  },
+  {
+    "duty_id": 886,
+    "duty_name": "ルビカンテ討滅戦"
+  },
+  {
+    "duty_id": 896,
+    "duty_name": "雪山冥洞 ラピス・マナリス"
+  },
+  {
+    "duty_id": 897,
+    "duty_name": "オルト・エウレカ B1～B10"
+  },
+  {
+    "duty_id": 898,
+    "duty_name": "オルト・エウレカ B11～B20"
+  },
+  {
+    "duty_id": 899,
+    "duty_name": "オルト・エウレカ B21～B30"
+  },
+  {
+    "duty_id": 900,
+    "duty_name": "オルト・エウレカ B31～B40"
+  },
+  {
+    "duty_id": 901,
+    "duty_name": "オルト・エウレカ B41～B50"
+  },
+  {
+    "duty_id": 902,
+    "duty_name": "オルト・エウレカ B51～B60"
+  },
+  {
+    "duty_id": 903,
+    "duty_name": "オルト・エウレカ B61～B70"
+  },
+  {
+    "duty_id": 904,
+    "duty_name": "オルト・エウレカ B71～B80"
+  },
+  {
+    "duty_id": 905,
+    "duty_name": "オルト・エウレカ B81～B90"
+  },
+  {
+    "duty_id": 906,
+    "duty_name": "オルト・エウレカ B91～B100"
+  },
+  {
+    "duty_id": 907,
+    "duty_name": "はつらつとした親子"
+  },
+  {
+    "duty_id": 908,
+    "duty_name": "絶オメガ検証戦"
+  },
+  {
+    "duty_id": 909,
+    "duty_name": "宝物庫 エルピス・ギュムナシオン祭殿"
+  },
+  {
+    "duty_id": 910,
+    "duty_name": "パンひとつと引き換えに"
+  },
+  {
+    "duty_id": 911,
+    "duty_name": "喜びの神域 エウプロシュネ"
+  },
+  {
+    "duty_id": 912,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 913,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 914,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 915,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 916,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 917,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 918,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 919,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 920,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 921,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 922,
+    "duty_name": "東方絡繰御殿"
+  },
+  {
+    "duty_id": 923,
+    "duty_name": "クリスタルコンフリクト(東方絡繰御殿：カスタムマッチ)"
+  },
+  {
+    "duty_id": 924,
+    "duty_name": "極ルビカンテ討滅戦"
+  },
+  {
+    "duty_id": 925,
+    "duty_name": "ヴァイパーの使命"
+  },
+  {
+    "duty_id": 927,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 928,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 929,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 930,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 931,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 932,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 933,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 934,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 935,
+    "duty_name": "挑戦！ ジャンピングアスレチック"
+  },
+  {
+    "duty_id": 936,
+    "duty_name": "万魔殿パンデモニウム：天獄編1"
+  },
+  {
+    "duty_id": 937,
+    "duty_name": "万魔殿パンデモニウム零式：天獄編1"
+  },
+  {
+    "duty_id": 938,
+    "duty_name": "万魔殿パンデモニウム：天獄編2"
+  },
+  {
+    "duty_id": 939,
+    "duty_name": "万魔殿パンデモニウム零式：天獄編2"
+  },
+  {
+    "duty_id": 940,
+    "duty_name": "万魔殿パンデモニウム：天獄編3"
+  },
+  {
+    "duty_id": 941,
+    "duty_name": "万魔殿パンデモニウム零式：天獄編3"
+  },
+  {
+    "duty_id": 942,
+    "duty_name": "万魔殿パンデモニウム：天獄編4"
+  },
+  {
+    "duty_id": 943,
+    "duty_name": "万魔殿パンデモニウム零式：天獄編4"
+  },
+  {
+    "duty_id": 944,
+    "duty_name": "アスラ討滅戦"
+  },
+  {
+    "duty_id": 945,
+    "duty_name": "ヴァリアントダンジョン 六根山"
+  },
+  {
+    "duty_id": 946,
+    "duty_name": "アナザーダンジョン 異聞六根山"
+  },
+  {
+    "duty_id": 947,
+    "duty_name": "アナザーダンジョン 異聞六根山 零式"
+  },
+  {
+    "duty_id": 948,
+    "duty_name": "黄金闘士「ゴールドル」"
+  },
+  {
+    "duty_id": 949,
+    "duty_name": "ゴルベーザ討滅戦"
+  },
+  {
+    "duty_id": 950,
+    "duty_name": "極ゴルベーザ討滅戦"
+  },
+  {
+    "duty_id": 952,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 953,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 954,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 955,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 956,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 957,
+    "duty_name": "オーシャンフィッシング"
+  },
+  {
+    "duty_id": 958,
+    "duty_name": "ブランダーヴィル"
+  },
+  {
+    "duty_id": 959,
+    "duty_name": "炎影の旅路"
+  },
+  {
+    "duty_id": 960,
+    "duty_name": "その瞳が見据えるもの"
+  },
+  {
+    "duty_id": 961,
+    "duty_name": "ヴァリアントダンジョン アロアロ島"
+  },
+  {
+    "duty_id": 962,
+    "duty_name": "華めく神域 タレイア"
+  },
+  {
+    "duty_id": 964,
+    "duty_name": "ゼロムス討滅戦"
+  },
+  {
+    "duty_id": 965,
+    "duty_name": "極ゼロムス討滅戦"
+  },
+  {
+    "duty_id": 966,
+    "duty_name": "旅する画家は幻想を征く"
+  },
+  {
+    "duty_id": 967,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 968,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 969,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 970,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 971,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 972,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 973,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 974,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 975,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 976,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 977,
+    "duty_name": "レッド・サンズ"
+  },
+  {
+    "duty_id": 978,
+    "duty_name": "クリスタルコンフリクト(レッド・サンズ：カスタムマッチ)"
+  },
+  {
+    "duty_id": 979,
+    "duty_name": "アナザーダンジョン 異聞アロアロ島"
+  },
+  {
+    "duty_id": 980,
+    "duty_name": "アナザーダンジョン 異聞アロアロ島 零式"
+  },
+  {
+    "duty_id": 981,
+    "duty_name": "悪夢遊園 ストレイバロー"
+  },
+  {
+    "duty_id": 982,
+    "duty_name": "友の試練"
+  },
+  {
+    "duty_id": 983,
+    "duty_name": "笑顔を護るための戦い"
+  },
+  {
+    "duty_id": 984,
+    "duty_name": "エターナルクイーン討滅戦"
+  },
+  {
+    "duty_id": 985,
+    "duty_name": "至天の座アルカディア：ライトヘビー級1"
+  },
+  {
+    "duty_id": 986,
+    "duty_name": "至天の座アルカディア零式：ライトヘビー級1"
+  },
+  {
+    "duty_id": 987,
+    "duty_name": "至天の座アルカディア：ライトヘビー級2"
+  },
+  {
+    "duty_id": 988,
+    "duty_name": "至天の座アルカディア零式：ライトヘビー級2"
+  },
+  {
+    "duty_id": 989,
+    "duty_name": "至天の座アルカディア：ライトヘビー級3"
+  },
+  {
+    "duty_id": 990,
+    "duty_name": "至天の座アルカディア零式：ライトヘビー級3"
+  },
+  {
+    "duty_id": 991,
+    "duty_name": "至天の座アルカディア：ライトヘビー級4"
+  },
+  {
+    "duty_id": 992,
+    "duty_name": "至天の座アルカディア零式：ライトヘビー級4"
+  },
+  {
+    "duty_id": 993,
+    "duty_name": "宝物庫 セノーテ・ジャジャグラル"
+  },
+  {
+    "duty_id": 994,
+    "duty_name": "毒と癒やしの頂上決戦"
+  },
+  {
+    "duty_id": 995,
+    "duty_name": "ゾラージャ討滅戦"
+  },
+  {
+    "duty_id": 996,
+    "duty_name": "極ゾラージャ討滅戦"
+  },
+  {
+    "duty_id": 997,
+    "duty_name": "一端の狩人"
+  },
+  {
+    "duty_id": 998,
+    "duty_name": "護る者、壊す者"
+  },
+  {
+    "duty_id": 999,
+    "duty_name": "打倒！ シャルトフィット盗賊団"
+  },
+  {
+    "duty_id": 1000,
+    "duty_name": "旅する画家は森都を征く"
+  },
+  {
+    "duty_id": 1001,
+    "duty_name": "祭器と作られた虚像"
+  },
+  {
+    "duty_id": 1002,
+    "duty_name": "トラルヴィドラールを狩る者"
+  },
+  {
+    "duty_id": 1003,
+    "duty_name": "寝ても覚めても"
+  },
+  {
+    "duty_id": 1006,
+    "duty_name": "絶もうひとつの未来"
+  },
+  {
+    "duty_id": 1008,
+    "duty_name": "廃地討究 ユウェヤーワータ"
+  },
+  {
+    "duty_id": 1009,
+    "duty_name": "王の家族"
+  },
+  {
+    "duty_id": 1010,
+    "duty_name": "滅暗闇の雲激闘戦"
+  },
+  {
+    "duty_id": 1012,
+    "duty_name": "マーカーが出る攻撃に対処しよう！"
+  },
+  {
+    "duty_id": 1013,
+    "duty_name": "地面に予兆が出る攻撃に対処しよう！"
+  },
+  {
+    "duty_id": 1014,
+    "duty_name": "さまざまな攻撃に対処しよう！"
+  },
+  {
+    "duty_id": 1015,
+    "duty_name": "ジュノ：ザ・ファーストウォーク"
+  },
+  {
+    "duty_id": 1016,
+    "duty_name": "決戦、ゾーゴー永結橋"
+  },
+  {
+    "duty_id": 1017,
+    "duty_name": "極エターナルクイーン討滅戦"
+  },
+  {
+    "duty_id": 1018,
+    "duty_name": "蜃気楼の島 クレセントアイル：南征編"
+  },
+  {
+    "duty_id": 1019,
+    "duty_name": "至天の座アルカディア：クルーザー級1"
+  },
+  {
+    "duty_id": 1020,
+    "duty_name": "至天の座アルカディア零式：クルーザー級1"
+  },
+  {
+    "duty_id": 1021,
+    "duty_name": "至天の座アルカディア：クルーザー級2"
+  },
+  {
+    "duty_id": 1022,
+    "duty_name": "至天の座アルカディア零式：クルーザー級2"
+  },
+  {
+    "duty_id": 1023,
+    "duty_name": "至天の座アルカディア：クルーザー級3"
+  },
+  {
+    "duty_id": 1024,
+    "duty_name": "至天の座アルカディア零式：クルーザー級3"
+  },
+  {
+    "duty_id": 1025,
+    "duty_name": "至天の座アルカディア：クルーザー級4"
+  },
+  {
+    "duty_id": 1026,
+    "duty_name": "至天の座アルカディア零式：クルーザー級4"
+  },
+  {
+    "duty_id": 1027,
+    "duty_name": "王城旧跡 アンダーキープ"
+  },
+  {
+    "duty_id": 1028,
+    "duty_name": "永久幽界 メインターミナル"
+  },
+  {
+    "duty_id": 1030,
+    "duty_name": "ゼレニア討滅戦"
+  },
+  {
+    "duty_id": 1031,
+    "duty_name": "極ゼレニア討滅戦"
+  },
+  {
+    "duty_id": 1032,
+    "duty_name": "ピルグリム・トラバース 第1～10巡礼路"
+  },
+  {
+    "duty_id": 1033,
+    "duty_name": "ピルグリム・トラバース 第11～20巡礼路"
+  },
+  {
+    "duty_id": 1034,
+    "duty_name": "ピルグリム・トラバース 第21～30巡礼路"
+  },
+  {
+    "duty_id": 1035,
+    "duty_name": "ピルグリム・トラバース 第31～40巡礼路"
+  },
+  {
+    "duty_id": 1036,
+    "duty_name": "ピルグリム・トラバース 第41～50巡礼路"
+  },
+  {
+    "duty_id": 1037,
+    "duty_name": "ピルグリム・トラバース 第51～60巡礼路"
+  },
+  {
+    "duty_id": 1038,
+    "duty_name": "ピルグリム・トラバース 第61～70巡礼路"
+  },
+  {
+    "duty_id": 1039,
+    "duty_name": "ピルグリム・トラバース 第71～80巡礼路"
+  },
+  {
+    "duty_id": 1040,
+    "duty_name": "ピルグリム・トラバース 第81～90巡礼路"
+  },
+  {
+    "duty_id": 1041,
+    "duty_name": "ピルグリム・トラバース 第91～100巡礼路"
+  },
+  {
+    "duty_id": 1043,
+    "duty_name": "護竜アルシュベルド狩猟戦"
+  },
+  {
+    "duty_id": 1044,
+    "duty_name": "極護竜アルシュベルド狩猟戦"
+  },
+  {
+    "duty_id": 1045,
+    "duty_name": "ヴァレンティオンパティスリー"
+  },
+  {
+    "duty_id": 1046,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1047,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1048,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1049,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1050,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1051,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1052,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1053,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1054,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1055,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1056,
+    "duty_name": "ベイサイド・バトルグラウンド"
+  },
+  {
+    "duty_id": 1057,
+    "duty_name": "クリスタルコンフリクト(ベイサイド・バトルグラウンド：カスタムマッチ)"
+  },
+  {
+    "duty_id": 1058,
+    "duty_name": "サンドリア：ザ・セカンドウォーク"
+  },
+  {
+    "duty_id": 1060,
+    "duty_name": "宝物庫 ボルト・オネイロン"
+  },
+  {
+    "duty_id": 1061,
+    "duty_name": "永遠の闇討滅戦"
+  },
+  {
+    "duty_id": 1062,
+    "duty_name": "極永遠の闇討滅戦"
+  },
+  {
+    "duty_id": 1063,
+    "duty_name": "詩想エミネントグリーフ討滅戦"
+  },
+  {
+    "duty_id": 1064,
+    "duty_name": "遺忘行路 ミストウェイク"
+  },
+  {
+    "duty_id": 1065,
+    "duty_name": "エミネントグリーフ討滅戦"
+  },
+  {
+    "duty_id": 1067,
+    "duty_name": "幻ツクヨミ討滅戦"
+  },
+  {
+    "duty_id": 1068,
+    "duty_name": "至天の座アルカディア：ヘビー級1"
+  },
+  {
+    "duty_id": 1069,
+    "duty_name": "至天の座アルカディア零式：ヘビー級1"
+  },
+  {
+    "duty_id": 1070,
+    "duty_name": "至天の座アルカディア：ヘビー級2"
+  },
+  {
+    "duty_id": 1071,
+    "duty_name": "至天の座アルカディア零式：ヘビー級2"
+  },
+  {
+    "duty_id": 1072,
+    "duty_name": "至天の座アルカディア：ヘビー級3"
+  },
+  {
+    "duty_id": 1073,
+    "duty_name": "至天の座アルカディア零式：ヘビー級3"
+  },
+  {
+    "duty_id": 1074,
+    "duty_name": "至天の座アルカディア：ヘビー級4"
+  },
+  {
+    "duty_id": 1075,
+    "duty_name": "至天の座アルカディア零式：ヘビー級4"
+  },
+  {
+    "duty_id": 1076,
+    "duty_name": "グラシャラボラス討滅戦"
+  },
+  {
+    "duty_id": 1077,
+    "duty_name": "極グラシャラボラス討滅戦"
+  },
+  {
+    "duty_id": 1080,
+    "duty_name": "ウォーコー・チーテ (演習戦)"
+  },
+  {
+    "duty_id": 1081,
+    "duty_name": "出撃！ エアフォースパイロット"
+  },
+  {
+    "duty_id": 1082,
+    "duty_name": "出撃！ エアフォースパイロット"
+  },
+  {
+    "duty_id": 1083,
+    "duty_name": "出撃！ エアフォースパイロット"
+  },
+  {
+    "duty_id": 1085,
+    "duty_name": "隣人と手を取り合いて"
+  }
+]

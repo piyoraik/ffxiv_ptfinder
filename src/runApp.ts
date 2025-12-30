@@ -1,0 +1,166 @@
+import { loadJobsJa } from "./jobs";
+import { DEFAULT_WEBHOOK_LIMIT } from "./config";
+import { postDiscordWebhook, sleep, toDiscordCodeBlock } from "./discordWebhook";
+import { formatListingText, type PartyRole } from "./partyText";
+import type { Listing } from "./types";
+import type { ResolvedCliOptions } from "./envOptions";
+import { buildListings } from "./listingsPipeline";
+import {
+  buildLodestoneSearchUrl,
+  fetchTopCharacterUrl,
+  parseCreator
+} from "./lodestone";
+import {
+  buildAchievementCategoryUrl,
+  fetchAchievementCategoryHtml,
+  parseUltimateClearsFromAchievementHtml
+} from "./lodestoneAchievements";
+
+/**
+ * party の整形に使うジョブ変換マップを作成します。
+ */
+function buildJobMaps(jobs: Record<string, { short: string; role: PartyRole }>): {
+  codeToShort: Map<string, string>;
+  codeToRole: Map<string, PartyRole>;
+} {
+  const entries = Object.entries(jobs);
+  return {
+    codeToShort: new Map(entries.map(([code, info]) => [code, info.short])),
+    codeToRole: new Map(entries.map(([code, info]) => [code, info.role]))
+  };
+}
+
+/**
+ * Discord Webhook に送信します（最大 `limit` 件、1募集=1メッセージ）。
+ */
+async function sendToDiscordWebhook(params: {
+  webhookUrl: string;
+  limit: number;
+  listings: Listing[];
+  codeToShort: Map<string, string>;
+  codeToRole: Map<string, PartyRole>;
+}): Promise<number> {
+  const targets = params.listings.slice(0, params.limit);
+  const lodestoneCache = new Map<string, { searchUrl: string; characterUrl?: string }>();
+
+  for (const listing of targets) {
+    const enriched = await enrichListingWithLodestone(listing, lodestoneCache);
+    const text = formatListingText(enriched, params.codeToShort, params.codeToRole);
+    const content = toDiscordCodeBlock(text);
+    await postDiscordWebhook(params.webhookUrl, content);
+    await sleep(350);
+  }
+  return targets.length;
+}
+
+/**
+ * 募集者情報（`Name @ World`）から Lodestone の検索URL/キャラクターURLを補完します。
+ *
+ * 検索の結果、先頭にヒットしたURLが取得できない場合でも、検索URLはセットします。
+ */
+async function enrichListingWithLodestone(
+  listing: Listing,
+  cache: Map<
+    string,
+    {
+      searchUrl: string;
+      characterUrl?: string;
+      achievementUrl?: string;
+      ultimateStatus?: "ok" | "private_or_unavailable" | "error";
+      ultimateClears?: string[];
+    }
+  >
+): Promise<Listing> {
+  const creator = listing.creator?.trim();
+  if (!creator) return listing;
+
+  const cached = cache.get(creator);
+  if (cached) {
+    return {
+      ...listing,
+      creatorLodestoneSearchUrl: cached.searchUrl,
+      creatorLodestoneUrl: cached.characterUrl,
+      creatorAchievementUrl: cached.achievementUrl,
+      creatorUltimateClears: cached.ultimateClears,
+      creatorUltimateClearsStatus: cached.ultimateStatus
+    };
+  }
+
+  const info = parseCreator(creator);
+  if (!info) return listing;
+
+  const searchUrl = buildLodestoneSearchUrl(info);
+  let characterUrl: string | undefined;
+  let achievementUrl: string | undefined;
+  let ultimateStatus: "ok" | "private_or_unavailable" | "error" | undefined;
+  let ultimateClears: string[] | undefined;
+  try {
+    characterUrl = await fetchTopCharacterUrl(searchUrl);
+  } catch {
+    // 失敗しても通知自体は継続する
+    characterUrl = undefined;
+  }
+
+  if (characterUrl) {
+    achievementUrl = buildAchievementCategoryUrl(characterUrl);
+    if (achievementUrl) {
+      try {
+        const html = await fetchAchievementCategoryHtml(achievementUrl);
+        const parsed = parseUltimateClearsFromAchievementHtml(html);
+        ultimateStatus = parsed.status;
+        ultimateClears = parsed.clears;
+      } catch {
+        ultimateStatus = "error";
+        ultimateClears = undefined;
+      }
+    }
+  }
+
+  cache.set(creator, {
+    searchUrl,
+    characterUrl,
+    achievementUrl,
+    ultimateStatus,
+    ultimateClears
+  });
+  return {
+    ...listing,
+    creatorLodestoneSearchUrl: searchUrl,
+    creatorLodestoneUrl: characterUrl,
+    creatorAchievementUrl: achievementUrl,
+    creatorUltimateClears: ultimateClears,
+    creatorUltimateClearsStatus: ultimateStatus
+  };
+}
+
+export type RunResult = { mode: "webhook"; sent: number };
+
+/**
+ * アプリのコア処理（CLI/Lambda共通）。
+ *
+ * - HTML 取得（ファイル or URL）
+ * - 募集一覧を抽出
+ * - DCフィルタ / クエリフィルタ
+ * - description タグを requirements に抽出
+ * - JSON/text 出力、または webhook 送信
+ */
+export async function runApp(options: ResolvedCliOptions): Promise<RunResult> {
+  const taggedListings = await buildListings({ input: options.input, query: options.query });
+
+  const jobsJa = await loadJobsJa();
+  const { codeToShort, codeToRole } = buildJobMaps(jobsJa.jobs);
+
+  if (!options.query?.trim()) {
+    throw new Error("FFXIV_PTFINDER_QUERY is required.");
+  }
+
+  const limit = options.limit ?? DEFAULT_WEBHOOK_LIMIT;
+  const sent = await sendToDiscordWebhook({
+    webhookUrl: options.webhookUrl,
+    limit,
+    listings: taggedListings,
+    codeToShort,
+    codeToRole
+  });
+  return { mode: "webhook", sent };
+}

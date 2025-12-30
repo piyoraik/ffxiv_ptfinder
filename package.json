@@ -1,0 +1,23 @@
+{
+  "name": "ffxiv_ptfinder",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "FFXIV_PTFINDER_QUERY=タイタン tsx src/debugCli.ts",
+    "dev": "FFXIV_PTFINDER_QUERY=タイタン tsx watch src/debugCli.ts",
+    "notify": "tsx src/notifyCli.ts",
+    "sam:build": "SAM_CLI_HOME=.samcli sam build",
+    "sam:deploy": "SAM_CLI_HOME=.samcli sam deploy --guided"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.20.0",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,49 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: ffxiv party finder notifier (EventBridge -> Lambda -> Discord webhook)
+
+Parameters:
+  DiscordWebhookUrl:
+    Type: String
+    NoEcho: true
+    Description: Discord Webhook URL
+  Query:
+    Type: String
+    Description: "duty.title partial match query (FFXIV_PTFINDER_QUERY)"
+  Limit:
+    Type: Number
+    Default: 5
+    Description: "Max messages per run (FFXIV_PTFINDER_LIMIT)"
+
+Resources:
+  PtfinderFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: ffxiv-ptfinder-notifier
+      Runtime: nodejs20.x
+      Architectures:
+        - arm64
+      Handler: dist/lambdaHandler.handler
+      CodeUri: .
+      MemorySize: 256
+      Timeout: 60
+      Environment:
+        Variables:
+          DISCORD_WEBHOOK_URL: !Ref DiscordWebhookUrl
+          FFXIV_PTFINDER_QUERY: !Ref Query
+          FFXIV_PTFINDER_LIMIT: !Ref Limit
+      Events:
+        Schedule30m:
+          Type: Schedule
+          Properties:
+            Schedule: rate(30 minutes)
+            Enabled: true
+    Metadata:
+      BuildMethod: makefile
+
+Outputs:
+  FunctionName:
+    Value: !Ref PtfinderFunction
+  FunctionArn:
+    Value: !GetAtt PtfinderFunction.Arn
+
