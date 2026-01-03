@@ -1,0 +1,21 @@
+{
+  "dutyTitle": {
+    "terms": ["絶もうひとつの未来"],
+    "mode": "and"
+  },
+  "requirements": {
+    "terms": ["練習"],
+    "mode": "and"
+  },
+  "party": {
+    "recruiting": {
+      "healer": ["白", "占"],
+      "withinRoleMode": "or",
+      "acrossRolesMode": "and"
+    }
+  },
+  "description": {
+    "terms": ["最初から", "P1"],
+    "mode": "or"
+  }
+}

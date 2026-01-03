@@ -24,9 +24,13 @@ async function main(): Promise<void> {
 
   const cli = parseCliArgs(process.argv.slice(2));
   const env = readEnvOptions();
-  const query = cli.query ?? env.query;
 
-  const listings = await buildListings({ input: DEFAULT_LISTINGS_URL, query });
+  const listings = await buildListings({
+    input: DEFAULT_LISTINGS_URL,
+    descriptionTerms: env.descriptionTerms,
+    descriptionMode: env.descriptionMode,
+    searchFilter: env.searchFilter
+  });
 
   if (cli.limit ?? env.limit) {
     const limit = cli.limit ?? env.limit ?? listings.length;
@@ -42,4 +46,3 @@ main().catch((err: unknown) => {
   process.stderr.write(message + "\n");
   process.exitCode = 1;
 });
-

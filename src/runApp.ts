@@ -15,6 +15,11 @@ import {
   fetchAchievementCategoryHtml,
   parseUltimateClearsFromAchievementHtml
 } from "./lodestoneAchievements";
+import {
+  loadListingSearchFilterFromFile,
+  matchListing,
+  type ListingSearchFilter
+} from "./searchFilter";
 
 /**
  * party の整形に使うジョブ変換マップを作成します。
@@ -39,18 +44,38 @@ async function sendToDiscordWebhook(params: {
   listings: Listing[];
   codeToShort: Map<string, string>;
   codeToRole: Map<string, PartyRole>;
+  searchFilter?: ListingSearchFilter;
 }): Promise<number> {
-  const targets = params.listings.slice(0, params.limit);
-  const lodestoneCache = new Map<string, { searchUrl: string; characterUrl?: string }>();
+  const lodestoneCache = new Map<
+    string,
+    {
+      searchUrl: string;
+      characterUrl?: string;
+      achievementUrl?: string;
+      ultimateStatus?: "ok" | "private_or_unavailable" | "error";
+      ultimateClears?: string[];
+    }
+  >();
 
-  for (const listing of targets) {
+  let sent = 0;
+  for (const listing of params.listings) {
+    if (sent >= params.limit) break;
     const enriched = await enrichListingWithLodestone(listing, lodestoneCache);
     const text = formatListingText(enriched, params.codeToShort, params.codeToRole);
+
+    const ok = await matchListing({
+      listing: enriched,
+      filter: params.searchFilter,
+      formattedText: text
+    });
+    if (!ok) continue;
+
     const content = toDiscordCodeBlock(text);
     await postDiscordWebhook(params.webhookUrl, content);
     await sleep(350);
+    sent++;
   }
-  return targets.length;
+  return sent;
 }
 
 /**
@@ -145,14 +170,19 @@ export type RunResult = { mode: "webhook"; sent: number };
  * - JSON/text 出力、または webhook 送信
  */
 export async function runApp(options: ResolvedCliOptions): Promise<RunResult> {
-  const taggedListings = await buildListings({ input: options.input, query: options.query });
+  const fileFilter =
+    options.searchFilterFile ? await loadListingSearchFilterFromFile(options.searchFilterFile) : undefined;
+  const mergedSearchFilter = fileFilter ?? options.searchFilter;
+
+  const taggedListings = await buildListings({
+    input: options.input,
+    descriptionTerms: options.descriptionTerms,
+    descriptionMode: options.descriptionMode,
+    searchFilter: mergedSearchFilter
+  });
 
   const jobsJa = await loadJobsJa();
   const { codeToShort, codeToRole } = buildJobMaps(jobsJa.jobs);
-
-  if (!options.query?.trim()) {
-    throw new Error("FFXIV_PTFINDER_QUERY is required.");
-  }
 
   const limit = options.limit ?? DEFAULT_WEBHOOK_LIMIT;
   const sent = await sendToDiscordWebhook({
@@ -160,7 +190,8 @@ export async function runApp(options: ResolvedCliOptions): Promise<RunResult> {
     limit,
     listings: taggedListings,
     codeToShort,
-    codeToRole
+    codeToRole,
+    searchFilter: mergedSearchFilter
   });
   return { mode: "webhook", sent };
 }

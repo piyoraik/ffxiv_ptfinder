@@ -7,13 +7,29 @@ Parameters:
     Type: String
     NoEcho: true
     Description: Discord Webhook URL
-  Query:
-    Type: String
-    Description: "duty.title partial match query (FFXIV_PTFINDER_QUERY)"
   Limit:
     Type: Number
     Default: 5
     Description: "Max messages per run (FFXIV_PTFINDER_LIMIT)"
+  DescriptionTerms:
+    Type: String
+    Default: "最初から"
+    Description: "Comma-separated or JSON array for description filter terms (FFXIV_PTFINDER_DESCRIPTION_TERMS)"
+  DescriptionMode:
+    Type: String
+    Default: "and"
+    AllowedValues:
+      - and
+      - or
+    Description: "Description filter mode: and/or (FFXIV_PTFINDER_DESCRIPTION_MODE)"
+  FilterJson:
+    Type: String
+    Default: ""
+    Description: "Optional JSON filter object (FFXIV_PTFINDER_FILTER_JSON)"
+  FilterFile:
+    Type: String
+    Default: "data/filter.json"
+    Description: "Path to JSON filter file in the deployment package (FFXIV_PTFINDER_FILTER_FILE)"
 
 Resources:
   PtfinderFunction:
@@ -25,13 +41,16 @@ Resources:
         - arm64
       Handler: dist/lambdaHandler.handler
       CodeUri: .
-      MemorySize: 256
-      Timeout: 60
+      MemorySize: 512
+      Timeout: 120
       Environment:
         Variables:
           DISCORD_WEBHOOK_URL: !Ref DiscordWebhookUrl
-          FFXIV_PTFINDER_QUERY: !Ref Query
           FFXIV_PTFINDER_LIMIT: !Ref Limit
+          FFXIV_PTFINDER_DESCRIPTION_TERMS: !Ref DescriptionTerms
+          FFXIV_PTFINDER_DESCRIPTION_MODE: !Ref DescriptionMode
+          FFXIV_PTFINDER_FILTER_JSON: !Ref FilterJson
+          FFXIV_PTFINDER_FILTER_FILE: !Ref FilterFile
       Events:
         Schedule30m:
           Type: Schedule
@@ -46,4 +65,3 @@ Outputs:
     Value: !Ref PtfinderFunction
   FunctionArn:
     Value: !GetAtt PtfinderFunction.Arn
-
