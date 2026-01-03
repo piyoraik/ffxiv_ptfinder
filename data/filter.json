@@ -15,7 +15,7 @@
     }
   },
   "description": {
-    "terms": ["最初から", "P1"],
+    "terms": ["最初", "P1", "P2"],
     "mode": "or"
   }
 }
