@@ -199,8 +199,6 @@ export async function runApp(options: ResolvedCliOptions): Promise<RunResult> {
 
   logger.info("start", {
     limit: options.limit,
-    descriptionTerms: options.descriptionTerms,
-    descriptionMode: options.descriptionMode,
     filterFile: options.searchFilterFile,
     filterLoaded: Boolean(fileFilter),
     filterSummary: summarizeFilter(mergedSearchFilter)
@@ -209,8 +207,6 @@ export async function runApp(options: ResolvedCliOptions): Promise<RunResult> {
   const buildStartAt = Date.now();
   const taggedListings = await buildListings({
     input: options.input,
-    descriptionTerms: options.descriptionTerms,
-    descriptionMode: options.descriptionMode,
     searchFilter: mergedSearchFilter
   });
   logger.info("listings_built", { count: taggedListings.length, ms: Date.now() - buildStartAt });

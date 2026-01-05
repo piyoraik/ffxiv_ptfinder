@@ -2,6 +2,7 @@ import { DEFAULT_LISTINGS_URL } from "./config";
 import { parseCliArgs } from "./cliOptions";
 import { readEnvOptions } from "./envOptions";
 import { buildListings } from "./listingsPipeline";
+import { loadListingSearchFilterFromFile } from "./searchFilter";
 
 /**
  * パイプ出力時（例: `| head`）の EPIPE を無視するハンドラを登録します。
@@ -24,12 +25,11 @@ async function main(): Promise<void> {
 
   const cli = parseCliArgs(process.argv.slice(2));
   const env = readEnvOptions();
+  const searchFilter = await loadListingSearchFilterFromFile(env.filterFile);
 
   const listings = await buildListings({
     input: DEFAULT_LISTINGS_URL,
-    descriptionTerms: env.descriptionTerms,
-    descriptionMode: env.descriptionMode,
-    searchFilter: env.searchFilter
+    searchFilter
   });
 
   if (cli.limit ?? env.limit) {

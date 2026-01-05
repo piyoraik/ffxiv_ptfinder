@@ -19,18 +19,16 @@ export function printUsageAndExit(exitCode = 0): never {
 export function getUsageText(): string {
   return [
     "Usage:",
-    `  yarn start -- [--query <text>] [--limit <n>]`,
-    `    defaults: --query (required)  --limit ${DEFAULT_WEBHOOK_LIMIT}`,
+    `  yarn start -- [--limit <n>]`,
+    `    defaults: --limit ${DEFAULT_WEBHOOK_LIMIT}`,
     "",
     "Environment variables (Lambda-friendly):",
-    `  ${ENV.QUERY}=<text>`,
     `  ${ENV.LIMIT}=<n>  (default: ${DEFAULT_WEBHOOK_LIMIT})`,
     `  ${ENV.DISCORD_WEBHOOK_URL}=<discord_webhook_url>  (required)`,
-    `  ${ENV.DESCRIPTION_TERMS}=<comma-separated|json-array>  (default: 最初から)`,
-    `  ${ENV.DESCRIPTION_MODE}=and|or  (default: and)`,
+    `  ${ENV.FILTER_FILE}=<path>  (default: data/filter.json)`,
     "Examples:",
-    `  ${ENV.QUERY}=\"タイタン\" ${ENV.DISCORD_WEBHOOK_URL}=\"https://discord.com/api/webhooks/...\" yarn start`,
-    `  ${ENV.QUERY}=\"絶アルテマ\" ${ENV.LIMIT}=5 ${ENV.DISCORD_WEBHOOK_URL}=\"https://discord.com/api/webhooks/...\" yarn start`
+    `  ${ENV.DISCORD_WEBHOOK_URL}=\"https://discord.com/api/webhooks/...\" yarn notify`,
+    `  ${ENV.LIMIT}=5 ${ENV.DISCORD_WEBHOOK_URL}=\"https://discord.com/api/webhooks/...\" yarn notify`
   ].join("\n");
 }
 

@@ -6,7 +6,7 @@ resolve_s3 = true
 s3_prefix = "ffxiv-finder-ultima"
 region = "ap-northeast-1"
 capabilities = "CAPABILITY_IAM"
-parameter_overrides = "Limit=\"5\" DescriptionTerms=\"\" DescriptionMode=\"and\" FilterJson=\"\" FilterFile=\"data/filter.json\""
+parameter_overrides = "Limit=\"5\" FilterFile=\"data/filter.json\""
 image_repositories = []
 
 [default.global.parameters]

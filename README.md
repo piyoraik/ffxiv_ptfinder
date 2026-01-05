@@ -50,9 +50,6 @@ SAMデプロイ時もこのファイルが同梱され、Lambda 実行時に読�
 - `FFXIV_PTFINDER_LIMIT`（任意）: 送信上限（デフォルト 5）
 - `FFXIV_PTFINDER_FILTER_FILE`（任意）: フィルタファイルパス（デフォルト `data/filter.json`）
 
-（互換用/非常用）
-- `FFXIV_PTFINDER_FILTER_JSON`: フィルタJSON文字列（ファイルが読めない場合に使用）
-
 ## ローカル実行
 
 ### デバッグ（Webhook送信なし、JSON出力）
@@ -84,4 +81,3 @@ SAM_CLI_HOME=.samcli sam deploy --guided
 ```sh
 SAM_CLI_HOME=.samcli sam deploy
 ```
-

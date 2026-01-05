@@ -11,21 +11,6 @@ Parameters:
     Type: Number
     Default: 5
     Description: "Max messages per run (FFXIV_PTFINDER_LIMIT)"
-  DescriptionTerms:
-    Type: String
-    Default: "最初から"
-    Description: "Comma-separated or JSON array for description filter terms (FFXIV_PTFINDER_DESCRIPTION_TERMS)"
-  DescriptionMode:
-    Type: String
-    Default: "and"
-    AllowedValues:
-      - and
-      - or
-    Description: "Description filter mode: and/or (FFXIV_PTFINDER_DESCRIPTION_MODE)"
-  FilterJson:
-    Type: String
-    Default: ""
-    Description: "Optional JSON filter object (FFXIV_PTFINDER_FILTER_JSON)"
   FilterFile:
     Type: String
     Default: "data/filter.json"
@@ -47,15 +32,13 @@ Resources:
         Variables:
           DISCORD_WEBHOOK_URL: !Ref DiscordWebhookUrl
           FFXIV_PTFINDER_LIMIT: !Ref Limit
-          FFXIV_PTFINDER_DESCRIPTION_TERMS: !Ref DescriptionTerms
-          FFXIV_PTFINDER_DESCRIPTION_MODE: !Ref DescriptionMode
-          FFXIV_PTFINDER_FILTER_JSON: !Ref FilterJson
           FFXIV_PTFINDER_FILTER_FILE: !Ref FilterFile
       Events:
         Schedule30m:
           Type: Schedule
           Properties:
-            Schedule: rate(30 minutes)
+            # JST 18:00-23:30 (UTC 09:00-14:30) のみ30分間隔で実行
+            Schedule: cron(0/30 9-14 ? * * *)
             Enabled: true
     Metadata:
       BuildMethod: makefile
