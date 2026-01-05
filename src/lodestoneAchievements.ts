@@ -1,54 +1,78 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 
 const LODESTONE_BASE_URL = "https://jp.finalfantasyxiv.com";
 const ULTIMATE_CATEGORY_ID = 4;
 
 /**
  * 高難度（絶/零式）アチーブの正式名と表示用略称の定義（SSOT）。
+ *
+ * 定義は `data/high_end_achievements_ja.json` に置き、ここでは読み取って使います。
  */
-export const ULTIMATE_ACHIEVEMENTS = [
-  { name: "絶バハムートを狩りし者", short: "絶バハ", group: "ultimate" },
-  { name: "絶アルテマウェポンを破壊せし者", short: "絶テマ", group: "ultimate" },
-  { name: "絶アレキサンダーを破壊せし者", short: "絶アレキ", group: "ultimate" },
-  { name: "絶竜詩戦争を平定せし者", short: "絶竜詩", group: "ultimate" },
-  { name: "絶オメガ検証戦を完遂せし者", short: "絶オメガ", group: "ultimate" },
-  { name: "絶もうひとつの未来を見届けし者", short: "絶エデン", group: "ultimate" },
-  { name: "万魔殿の辺獄を完全制覇せし者：ランク1", short: "【パンデモ】辺獄", group: "savage" },
-  { name: "万魔殿の煉獄を完全制覇せし者：ランク1", short: "【パンデモ】煉獄", group: "savage" },
-  { name: "万魔殿の天獄を完全制覇せし者：ランク1", short: "【パンデモ】天獄", group: "savage" },
-  {
-    name: "アルカディアのライトヘビー級を制覇せし者：ランク1",
-    short: "【アルカディア】ライトヘビー",
-    group: "savage"
-  },
-  {
-    name: "アルカディアのクルーザー級を完全制覇せし者：ランク1",
-    short: "【アルカディア】クルーザー",
-    group: "savage"
-  },
-  {
-    name: "アルカディアのヘビー級を完全制覇せし者：ランク1",
-    short: "【アルカディア】ヘビー",
-    group: "savage"
-  }
-] as const;
+export type HighEndAchievementGroup = "ultimate" | "savage";
 
-export type UltimateAchievementName = (typeof ULTIMATE_ACHIEVEMENTS)[number]["name"];
-export type HighEndAchievementGroup = (typeof ULTIMATE_ACHIEVEMENTS)[number]["group"];
+export type HighEndAchievementDefinition = {
+  name: string;
+  short: string;
+  group: HighEndAchievementGroup;
+};
+
+type HighEndAchievementsJa = {
+  version: number;
+  achievements: HighEndAchievementDefinition[];
+};
+
+let cachedDefinitions: HighEndAchievementDefinition[] | undefined;
+let cachedShortMap: Map<string, string> | undefined;
+let cachedGroupMap: Map<string, HighEndAchievementGroup> | undefined;
+let cachedNameSet: Set<string> | undefined;
+
+function loadDefinitions(): HighEndAchievementDefinition[] {
+  if (cachedDefinitions) return cachedDefinitions;
+  const filePath = resolve(process.cwd(), "data/high_end_achievements_ja.json");
+  const rawText = readFileSync(filePath, "utf8");
+  const raw = JSON.parse(rawText) as HighEndAchievementsJa;
+  cachedDefinitions = raw.achievements ?? [];
+  return cachedDefinitions;
+}
+
+/**
+ * 高難度アチーブ定義を取得します。
+ */
+export function getUltimateAchievements(): HighEndAchievementDefinition[] {
+  return loadDefinitions();
+}
+
+export type UltimateAchievementName = string;
 
 /**
  * 正式名 → 略称のルックアップを返します。
  */
 export function getUltimateAchievementShortMap(): Map<UltimateAchievementName, string> {
-  return new Map(ULTIMATE_ACHIEVEMENTS.map((a) => [a.name, a.short]));
+  if (cachedShortMap) return cachedShortMap;
+  const map = new Map<string, string>();
+  for (const a of loadDefinitions()) map.set(a.name, a.short);
+  cachedShortMap = map;
+  return map;
 }
 
 /**
  * 正式名 → 種別（絶/零式）のルックアップを返します。
  */
 export function getUltimateAchievementGroupMap(): Map<UltimateAchievementName, HighEndAchievementGroup> {
-  return new Map(ULTIMATE_ACHIEVEMENTS.map((a) => [a.name, a.group]));
+  if (cachedGroupMap) return cachedGroupMap;
+  const map = new Map<string, HighEndAchievementGroup>();
+  for (const a of loadDefinitions()) map.set(a.name, a.group);
+  cachedGroupMap = map;
+  return map;
+}
+
+function getUltimateAchievementNameSet(): Set<string> {
+  if (cachedNameSet) return cachedNameSet;
+  cachedNameSet = new Set(loadDefinitions().map((a) => a.name));
+  return cachedNameSet;
 }
 
 /**
@@ -87,7 +111,7 @@ export function parseUltimateClearsFromAchievementHtml(
 ): UltimateAchievementParseResult {
   const $ = cheerio.load(html);
 
-  const targetSet = new Set<string>(ULTIMATE_ACHIEVEMENTS.map((a) => a.name));
+  const targetSet = getUltimateAchievementNameSet();
   const clears = new Set<string>();
   let foundAny = false;
 

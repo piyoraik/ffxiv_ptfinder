@@ -5,8 +5,8 @@
   "main": "dist/cli.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "FFXIV_PTFINDER_QUERY=タイタン tsx src/debugCli.ts",
-    "dev": "FFXIV_PTFINDER_QUERY=タイタン tsx watch src/debugCli.ts",
+    "start": "tsx src/debugCli.ts",
+    "dev": "tsx watch src/debugCli.ts",
     "notify": "tsx src/notifyCli.ts",
     "sam:build": "SAM_CLI_HOME=.samcli sam build",
     "sam:deploy": "SAM_CLI_HOME=.samcli sam deploy --guided"

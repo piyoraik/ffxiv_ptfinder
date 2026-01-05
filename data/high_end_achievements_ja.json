@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "achievements": [
+    { "name": "絶バハムートを狩りし者", "short": "絶バハ", "group": "ultimate" },
+    { "name": "絶アルテマウェポンを破壊せし者", "short": "絶テマ", "group": "ultimate" },
+    { "name": "絶アレキサンダーを破壊せし者", "short": "絶アレキ", "group": "ultimate" },
+    { "name": "絶竜詩戦争を平定せし者", "short": "絶竜詩", "group": "ultimate" },
+    { "name": "絶オメガ検証戦を完遂せし者", "short": "絶オメガ", "group": "ultimate" },
+    { "name": "絶もうひとつの未来を見届けし者", "short": "絶エデン", "group": "ultimate" },
+
+    { "name": "万魔殿の辺獄を完全制覇せし者：ランク1", "short": "【パンデモ】辺獄", "group": "savage" },
+    { "name": "万魔殿の煉獄を完全制覇せし者：ランク1", "short": "【パンデモ】煉獄", "group": "savage" },
+    { "name": "万魔殿の天獄を完全制覇せし者：ランク1", "short": "【パンデモ】天獄", "group": "savage" },
+    { "name": "アルカディアのライトヘビー級を制覇せし者：ランク1", "short": "【アルカディア】ライトヘビー", "group": "savage" },
+    { "name": "アルカディアのクルーザー級を完全制覇せし者：ランク1", "short": "【アルカディア】クルーザー", "group": "savage" },
+    { "name": "アルカディアのヘビー級を完全制覇せし者：ランク1", "short": "【アルカディア】ヘビー", "group": "savage" }
+  ]
+}
+
