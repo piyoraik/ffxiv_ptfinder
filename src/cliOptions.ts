@@ -3,6 +3,7 @@ import { DEFAULT_LISTINGS_URL, DEFAULT_WEBHOOK_LIMIT, ENV } from "./config";
 export type CliOptions = {
   query?: string;
   limit?: number;
+  output?: "json" | "discord";
 };
 
 /**
@@ -19,7 +20,7 @@ export function printUsageAndExit(exitCode = 0): never {
 export function getUsageText(): string {
   return [
     "Usage:",
-    `  yarn start -- [--limit <n>]`,
+    `  yarn start -- [--limit <n>] [--discord]`,
     `    defaults: --limit ${DEFAULT_WEBHOOK_LIMIT}`,
     "",
     "Environment variables (Lambda-friendly):",
@@ -28,7 +29,8 @@ export function getUsageText(): string {
     `  ${ENV.FILTER_FILE}=<path>  (default: data/filter.json)`,
     "Examples:",
     `  ${ENV.DISCORD_WEBHOOK_URL}=\"https://discord.com/api/webhooks/...\" yarn notify`,
-    `  ${ENV.LIMIT}=5 ${ENV.DISCORD_WEBHOOK_URL}=\"https://discord.com/api/webhooks/...\" yarn notify`
+    `  ${ENV.LIMIT}=5 ${ENV.DISCORD_WEBHOOK_URL}=\"https://discord.com/api/webhooks/...\" yarn notify`,
+    `  yarn start -- --discord --limit 5`
   ].join("\n");
 }
 
@@ -48,6 +50,11 @@ export function parseCliArgs(argv: string[]): CliOptions {
 
     if (arg === "--query" || arg === "-q") {
       options.query = argv[++index];
+      continue;
+    }
+
+    if (arg === "--discord") {
+      options.output = "discord";
       continue;
     }
 

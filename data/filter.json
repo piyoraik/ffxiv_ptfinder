@@ -6,16 +6,5 @@
   "requirements": {
     "terms": ["練習"],
     "mode": "and"
-  },
-  "party": {
-    "recruiting": {
-      "healer": ["白", "占"],
-      "withinRoleMode": "or",
-      "acrossRolesMode": "and"
-    }
-  },
-  "description": {
-    "terms": ["P2"],
-    "mode": "or"
   }
 }

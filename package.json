@@ -12,6 +12,7 @@
     "sam:deploy": "SAM_CLI_HOME=.samcli sam deploy --guided"
   },
   "dependencies": {
+    "@piyoraik/ffxiv-lodestone-character-lookup": "^1.0.5",
     "axios": "^1.7.9",
     "cheerio": "^1.1.2"
   },

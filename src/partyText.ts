@@ -4,7 +4,7 @@ import {
   getUltimateAchievementShortMap,
   type HighEndAchievementGroup,
   type UltimateAchievementName
-} from "./lodestoneAchievements";
+} from "@piyoraik/ffxiv-lodestone-character-lookup";
 
 export type PartyRole = "tank" | "healer" | "dps";
 

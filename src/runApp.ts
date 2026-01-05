@@ -6,39 +6,17 @@ import type { Listing } from "./types";
 import type { ResolvedCliOptions } from "./envOptions";
 import { buildListings } from "./listingsPipeline";
 import {
-  buildLodestoneSearchUrl,
-  fetchTopCharacterUrl,
-  parseCreator
-} from "./lodestone";
-import {
-  buildAchievementCategoryUrl,
-  fetchAchievementCategoryHtml,
-  parseUltimateClearsFromAchievementHtml
-} from "./lodestoneAchievements";
-import {
   loadListingSearchFilterFromFile,
   matchListing,
   type ListingSearchFilter
 } from "./searchFilter";
 import { createLogger, type Logger } from "./logger";
+import { buildJobMaps } from "./jobMaps";
+import { createLodestoneEnrichmentCache, enrichListingWithLodestone } from "./lodestoneEnrichment";
 
 function summarizeFilter(filter: ListingSearchFilter | undefined): Record<string, unknown> | undefined {
   if (!filter) return undefined;
   return { keys: Object.keys(filter) };
-}
-
-/**
- * party の整形に使うジョブ変換マップを作成します。
- */
-function buildJobMaps(jobs: Record<string, { short: string; role: PartyRole }>): {
-  codeToShort: Map<string, string>;
-  codeToRole: Map<string, PartyRole>;
-} {
-  const entries = Object.entries(jobs);
-  return {
-    codeToShort: new Map(entries.map(([code, info]) => [code, info.short])),
-    codeToRole: new Map(entries.map(([code, info]) => [code, info.role]))
-  };
 }
 
 /**
@@ -53,16 +31,7 @@ async function sendToDiscordWebhook(params: {
   searchFilter?: ListingSearchFilter;
   logger?: Logger;
 }): Promise<number> {
-  const lodestoneCache = new Map<
-    string,
-    {
-      searchUrl: string;
-      characterUrl?: string;
-      achievementUrl?: string;
-      ultimateStatus?: "ok" | "private_or_unavailable" | "error";
-      ultimateClears?: string[];
-    }
-  >();
+  const lodestoneCache = createLodestoneEnrichmentCache();
 
   let sent = 0;
   let scanned = 0;
@@ -96,86 +65,6 @@ async function sendToDiscordWebhook(params: {
     params.logger?.info("no_match", { posted: true });
   }
   return sent;
-}
-
-/**
- * 募集者情報（`Name @ World`）から Lodestone の検索URL/キャラクターURLを補完します。
- *
- * 検索の結果、先頭にヒットしたURLが取得できない場合でも、検索URLはセットします。
- */
-async function enrichListingWithLodestone(
-  listing: Listing,
-  cache: Map<
-    string,
-    {
-      searchUrl: string;
-      characterUrl?: string;
-      achievementUrl?: string;
-      ultimateStatus?: "ok" | "private_or_unavailable" | "error";
-      ultimateClears?: string[];
-    }
-  >
-): Promise<Listing> {
-  const creator = listing.creator?.trim();
-  if (!creator) return listing;
-
-  const cached = cache.get(creator);
-  if (cached) {
-    return {
-      ...listing,
-      creatorLodestoneSearchUrl: cached.searchUrl,
-      creatorLodestoneUrl: cached.characterUrl,
-      creatorAchievementUrl: cached.achievementUrl,
-      creatorUltimateClears: cached.ultimateClears,
-      creatorUltimateClearsStatus: cached.ultimateStatus
-    };
-  }
-
-  const info = parseCreator(creator);
-  if (!info) return listing;
-
-  const searchUrl = buildLodestoneSearchUrl(info);
-  let characterUrl: string | undefined;
-  let achievementUrl: string | undefined;
-  let ultimateStatus: "ok" | "private_or_unavailable" | "error" | undefined;
-  let ultimateClears: string[] | undefined;
-  try {
-    characterUrl = await fetchTopCharacterUrl(searchUrl);
-  } catch {
-    // 失敗しても通知自体は継続する
-    characterUrl = undefined;
-  }
-
-  if (characterUrl) {
-    achievementUrl = buildAchievementCategoryUrl(characterUrl);
-    if (achievementUrl) {
-      try {
-        const html = await fetchAchievementCategoryHtml(achievementUrl);
-        const parsed = parseUltimateClearsFromAchievementHtml(html);
-        ultimateStatus = parsed.status;
-        ultimateClears = parsed.clears;
-      } catch {
-        ultimateStatus = "error";
-        ultimateClears = undefined;
-      }
-    }
-  }
-
-  cache.set(creator, {
-    searchUrl,
-    characterUrl,
-    achievementUrl,
-    ultimateStatus,
-    ultimateClears
-  });
-  return {
-    ...listing,
-    creatorLodestoneSearchUrl: searchUrl,
-    creatorLodestoneUrl: characterUrl,
-    creatorAchievementUrl: achievementUrl,
-    creatorUltimateClears: ultimateClears,
-    creatorUltimateClearsStatus: ultimateStatus
-  };
 }
 
 export type RunResult = { mode: "webhook"; sent: number };

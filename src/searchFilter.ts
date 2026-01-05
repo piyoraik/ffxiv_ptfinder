@@ -1,4 +1,6 @@
 import type { Listing } from "./types";
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
 import { buildPartyGroups, type PartyRole } from "./partyText";
 import { loadJobsJa } from "./jobs";
 import {
@@ -6,7 +8,7 @@ import {
   getUltimateAchievementShortMap,
   type HighEndAchievementGroup,
   type UltimateAchievementName
-} from "./lodestoneAchievements";
+} from "@piyoraik/ffxiv-lodestone-character-lookup";
 
 export type MatchMode = "and" | "or";
 
@@ -255,5 +257,3 @@ export async function loadListingSearchFilterFromFile(
     return undefined;
   }
 }
-import { readFile } from "node:fs/promises";
-import { resolve } from "node:path";
